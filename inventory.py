@@ -1,0 +1,1 @@
+userinventory = {'pokeballs':10,'pokemons':[],'pokecoins':0}
