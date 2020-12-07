@@ -1,4 +1,4 @@
 - Change inventory stuff to json format
 - For inventory command, change it to send just the pokemon name and not the square 
   brackets and quotes
--
+- add code command

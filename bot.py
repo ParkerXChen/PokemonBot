@@ -28,4 +28,4 @@ dispatcher.add_handler(start_handler)
 searchcmd.add_searchhandler(dispatcher)
 inventorycmd.add_inventorycmdhandler(dispatcher)
 
-updater.start_polling()
+updater.start_polling() 
