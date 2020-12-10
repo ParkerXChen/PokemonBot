@@ -3,7 +3,7 @@ from telegram.ext import Dispatcher,CommandHandler
 
 def inventorycmd(update, context):
     update.message.reply_text(
-        'Pokeballs: You have %s pokeballs. \n Pokemons: Your pokemon are: %s.\n Pokecoins: You have %s Pokecouns'
+        'Pokeballs: You have %s pokeballs. \n Pokemons: Your pokemon are: %s.\n Pokecoins: You have %s Pokecoins'
         %(inventory.userinventory['pokeballs'], inventory.userinventory['pokemons'], inventory.userinventory['pokecoins'])
     )
 

@@ -1,29 +1,15 @@
 pokemons = [
-    'Pikachu',
-    'Pikachu',
-    'Pikachu',
-    'Pikachu',
-    'Pikachu',
-    'Squirtle',
-    'Squirtle',
-    'Squirtle',
-    'Squirtle',
-    'Squirtle',
-    'Charmander',
-    'Charmander',
-    'Charmander',
-    'Charmander',
-    'Charmander',
-    'Bulbasour',
-    'Bulbasour',
-    'Bulbasour',
-    'Bulbasour',
-    'Bulbasour',
-    'Rioulu',
-    'Rioulu',
+    #Common Pokemon:
     'Eeve',
     'Eeve',
     'Eeve',
     'Eeve',
     'Eeve'
-]
+    'Eeve',
+    'Eeve',
+    'Eeve',
+    'Eeve',
+    'Eeve'
+    #Uncommon Pokemon
+    'Rioulu',
+    'Rioulu']
