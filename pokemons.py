@@ -1,15 +1,22 @@
 pokemons = [
-    #Common Pokemon:
+    #Normal Pokemon:
     'Eeve',
-    'Eeve',
-    'Eeve',
-    'Eeve',
-    'Eeve'
-    'Eeve',
-    'Eeve',
-    'Eeve',
-    'Eeve',
-    'Eeve'
-    #Uncommon Pokemon
     'Rioulu',
-    'Rioulu']
+    'Snover',
+    'Absol',
+    'Shelmet',
+    'Honedge',
+    'Aerodactyl',
+    'Aron',
+    'Aipom',
+    'Abra',
+    'Swablu',
+    'Amura',
+    'Foongus',
+    'Mareep',
+    'Anorith',
+    'Ekans',
+    'Growlithe',
+    'Archen',
+    'Spinirak',
+    'Anorith']
