@@ -8,20 +8,22 @@ charmanderbutton = InlineKeyboardButton('Charmander',callback_data='choose:Charm
 choosestarterkb = InlineKeyboardMarkup([[squritlebutton, bulbasourbutton, charmanderbutton]])
 
 def start(update, context):
-    msg = "Hello %s! I\'m pokemon professor @ParkerChen. \n\nHmmm. You look like you would make a pretty good trainer. Why don't you pick a starter pokemon? Pick one from the following:"%(update.message.from_user.first_name,)
+    msg = "Hello %s! I\'m pokemon professor @ParkerChen. \n\nHmmm. You look like you would make a pretty good trainer. Why don't you pick a starter pokemon? Pick one from the following:"%(update.message.from_user.first_name)
     update.message.reply_text(msg,reply_markup= choosestarterkb)
 
 def startcallback(update, context):
     query = update.callback_query
     if query.data == 'choose:Squirtle':
         inventory.userinventory['pokemons'].append('Squirtle')
-        query.edit_message_text('Squirtle? Nice choice! He will be with you for the rest of your journey. Oh, and, you can use the /inventory to see your items. Good luck!')
+        query.edit_message_text('Squirtle? Nice choice! He will be with you for the rest of your journey. Also, take 100 pokedollars and 10 pokeballs to help you on your journey. Good luck!')
     elif query.data == 'choose:Bulbasour':
         inventory.userinventory['pokemons'].append('Bulbasour')
-        query.edit_message_text('Bulbasour? Nice choice! He will be with you for the rest of your journey. Oh, and, you can use the /inventory to see your items. Good luck!')
+        query.edit_message_text('Bulbasour? Nice choice! He will be with you for the rest of your journey. Also, take 100 pokedollars and 10 pokeballs to help you on your journey. Good luck!')
     elif query.data == 'choose:Charmander':
         inventory.userinventory['pokemons'].append('Charmander')
-        query.edit_message_text('Charmander? Nice choice! He will be with you for the rest of your journey. Oh, and, you can use the /inventory to see your items. Good luck!')
+        query.edit_message_text('Charmander? Nice choice! He will be with you for the rest of your journey. Also, take 100 pokedollars and 10 pokeballs to help you on your journey. Good luck!')
+        inventory.userinventory['pokedollars']+=100
+        inventory.userinventory['balls']['pokeballs']+=10
 
 def add_startcmdhandler(dp:Dispatcher):
     dp.add_handler(CommandHandler('start', start)) 

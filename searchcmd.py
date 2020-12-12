@@ -31,7 +31,6 @@ def search1callback(update, context):
 
 def search2callback(update, context):
         global pokemonchosen
-        
         query = update.callback_query     
         number = random.randint(1,3)    
         if query.data == 'search2:yes':

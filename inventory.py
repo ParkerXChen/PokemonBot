@@ -1,1 +1,1 @@
-userinventory = {'pokeballs':10,'pokemons':[],'pokecoins':0}
+userinventory = {'balls':{'pokeballs':0,'greatballs':0, 'ultraballs':0, 'masterballs':0},'pokemons':[],'pokedollars':0}
