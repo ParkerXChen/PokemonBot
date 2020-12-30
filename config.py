@@ -16,5 +16,5 @@ CONFIG = {}
 
 load_config()
 
-if not "inventory" in CONFIG:
-    CONFIG["inventory"] = {}
+if not "userinventory" in CONFIG:
+    CONFIG["userinventory"] = {}

@@ -61,25 +61,27 @@ def search2callback(update, context):
         global pokemonchosen
         global pokemonchosenstr
         query = update.callback_query     
+        uid = str(query.from_user.id)
+        inventory.check_uid(uid)    
         number = random.randint(1,100)    
         if query.data == 'search2:yes':
-            if inventory.userinventory['balls']['pokeballs'] <= 0:
+            if inventory.userinventory[uid]['balls']['pokeballs'] <= 0:
                 query.edit_message_text('You don\'t have any pokeballs!')
             else:
                 if number <= pokemonchosen.catchRate:
                     query.edit_message_text('Nice job! You captured the %s! \n\nYou earned 500 XP and 100 Pokecoins! \n\nCatchrate of %s: %s%%'%(pokemonchosenstr,pokemonchosenstr,pokemonchosen.catchRate))
                     print (pokemonchosenstr)
-                    inventory.add_pokemon(pokemonchosenstr)
-                    inventory.add_pokeballs(-1)
+                    inventory.add_pokemon(uid,pokemonchosenstr)
+                    inventory.add_pokeballs(uid,-1)
                     number = random.randint(1,3)    
                     choosenewpokemon()
                     number = random.randint(1,100)    
-                    inventory.add_XP(500)
-                    inventory.add_pokedollars(100)
+                    inventory.add_XP(uid,500)
+                    inventory.add_pokedollars(uid,100)
                 else:
                         query.edit_message_text('%s broke out of the pokeball! Catchrate of %s: %s%%'%(pokemonchosenstr,pokemonchosenstr,pokemonchosen.catchRate))
                         number = random.randint(1,3)
-                        inventory.add_pokeballs(-1)
+                        inventory.add_pokeballs(uid,-1)
                         choosenewpokemon()
                         number = random.randint(1,100)    
                 
