@@ -1,0 +1,25 @@
+{
+    "userinventory": {
+        "level": 0,
+        "XP": 1500,
+        "balls": {
+            "pokeballs": 31,
+            "greatballs": 0,
+            "ultraballs": 0,
+            "masterballs": 0
+        },
+        "buddy": "",
+        "pokemons": [
+            "Accelgor",
+            "Accelgor",
+            "Abomasnow"
+        ],
+        "otheritems": [],
+        "pokedollars": 10000000000100,
+        "codesredeemed": [
+            "devfor$"
+        ],
+        "started": false
+    },
+    "inventory": {}
+}
