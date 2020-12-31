@@ -41,6 +41,10 @@ aerodactyl = pokemon('Aerodactyl','Fossil Pokemon', 'https://orig00.deviantart.n
 aggron = pokemon('Aggron','Fossil Pokemon', 'https://cdn.staticneo.com/w/pokemon/c/c1/306.gif', 
                     ['Steel', 'Rock'], 'Aggron claims an entire mountain as its own territory. It mercilessly beats up anything that violates its environment. This Pokémon vigilantly patrols its territory at all times.',
                      'AGG-ron', '2.11m', '360kg', ['Aron','Lairon','Aggron'], 2, 20,'s', True)
+
+aipom = pokemon('Aipom','Long Tail Pokemon', 'https://professorlotus.com/Sprites/Aipom.gif', 
+                    ['Normal'], 'Aipoma\'s tail ends in a hand-like appendage that can be cleverly manipulated. However, because the Pokémon uses its tail so much, its real hands have become rather clumsy.',
+                     'AE-pom', '0.79m', '11.5kg', ['Aipom','Ambipom'], 0, 40,'u', True)
     
 
 
@@ -49,7 +53,8 @@ commonpokemons = [
 ]
 
 uncommonpokemons = [
-    accelgor
+    accelgor,
+    aipom
 ]
 
 rarepokemons = [
