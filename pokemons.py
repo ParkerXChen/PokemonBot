@@ -44,8 +44,19 @@ aggron = pokemon('Aggron','Fossil Pokemon', 'https://cdn.staticneo.com/w/pokemon
 
 aipom = pokemon('Aipom','Long Tail Pokemon', 'https://professorlotus.com/Sprites/Aipom.gif', 
                     ['Normal'], 'Aipoma\'s tail ends in a hand-like appendage that can be cleverly manipulated. However, because the Pokémon uses its tail so much, its real hands have become rather clumsy.',
-                     'AE-pom', '0.79m', '11.5kg', ['Aipom','Ambipom'], 0, 40,'u', True)
-    
+                     'AE-pom', '0.79m', '11.5kg', ['Aipom','Ambipom'], 0, 40,'u', False)
+
+alakazam = pokemon('Alakazam','Psi Pokemon', 'https://i.pinimg.com/originals/a3/9e/03/a39e0335bd48c8acbeec42932618aa44.gif', 
+                    ['Physcic'], 'Alakazam\'s brain continually grows, making its head far too heavy to support with its neck. This Pokémon holds its head up using its psychokinetic power instead.',
+                     'AH-la-kuh-ZAM', '1.5m', '48kg', ['Abra', 'Kadabra','Alakazam'], 0, 30,'s', True)
+
+alomomola = pokemon('Alomomola','Caring Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/8/8d/Alomomola_BW.gif/revision/latest/scale-to-width-down/38?cb=20120415140141', 
+                    ['Water'], 'The reason it helps Pokémon in a weakened condition is that any Pokémon coming after them may also attack Alomomola.',
+                     'uh-LOH-muh-MOH-luh', '1.2m', '31.6kg', ['Alomomola'], 0, 40,'r', False)   
+
+altaria = pokemon('Altaria','Humming Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/8/8d/Alomomola_BW.gif/revision/latest/scale-to-width-down/38?cb=20120415140141', 
+                    ['Dragon','Flying'], 'Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokémon makes its listeners experience dreamy wonderment.',
+                     'ahl-TAR-ee-uh', '1.09m', '20.6', ['Swablu','Altaria'], 0, 40,'r', True)    
 
 
 commonpokemons = [
@@ -65,7 +76,10 @@ rarepokemons = [
 superrarepokemons = [
   abomasnow,
   aerodactyl,
-  aggron
+  aggron,
+  alakazam,
+  alomomola,
+  altaria
 ]
 
 legendarypokemons = [
