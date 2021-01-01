@@ -54,7 +54,7 @@ alomomola = pokemon('Alomomola','Caring Pokemon', 'https://static.wikia.nocookie
                     ['Water'], 'The reason it helps Pokémon in a weakened condition is that any Pokémon coming after them may also attack Alomomola.',
                      'uh-LOH-muh-MOH-luh', '1.2m', '31.6kg', ['Alomomola'], 0, 40,'r', False)   
 
-altaria = pokemon('Altaria','Humming Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/8/8d/Alomomola_BW.gif/revision/latest/scale-to-width-down/38?cb=20120415140141', 
+altaria = pokemon('Altaria','Humming Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/d/d7/Altaria_BW.gif/revision/latest/top-crop/width/220/height/220?cb=20120622080947', 
                     ['Dragon','Flying'], 'Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokémon makes its listeners experience dreamy wonderment.',
                      'ahl-TAR-ee-uh', '1.09m', '20.6', ['Swablu','Altaria'], 0, 40,'r', True)    
 
@@ -84,4 +84,18 @@ superrarepokemons = [
 
 legendarypokemons = [
 
+]
+
+pokemons = [
+  abomasnow,
+  abra, 
+  absol,
+  accelgor,
+  aeigslash,
+  aerodactyl,
+  aggron,
+  aipom,
+  alakazam,
+  alomomola,
+  altaria
 ]

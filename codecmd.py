@@ -4,14 +4,15 @@ import inventory
 
 
 def code(update, context):
+    uid = str(update.message.from_user.id)
     if not len(context.args) == 0:
-        if not '%s'%(context.args[0]) in inventory.userinventory['codesredeemed']:
+        if not '%s'%(context.args[0]) in inventory.userinventory[uid]['codesredeemed']:
             if context.args[0] in codelist.codes:
                 amount = codelist.codes[context.args[0]]['amount']
                 rtype = codelist.codes[context.args[0]]['rtype']
-                inventory.add_coderedeemed(context.args[0])
+                inventory.add_coderedeemed(uid,context.args[0])
                 if rtype == 'pokedollars':
-                    inventory.add_pokedollars(amount)
+                    inventory.add_pokedollars(uid,amount)
                     update.message.reply_text('Code redeemed! You got %s %s!'%(amount,rtype))
             else: 
                 update.message.reply_text('Sorry, that code either does\'t exist or is expired.')

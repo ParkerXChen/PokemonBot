@@ -12,14 +12,14 @@ def shop(update, context):
 def shopcallback(update, context):
     query = update.callback_query
     print (query.data)
-
+    uid = str(query.from_user.id)
     if query.data == 'buy:tenpokeballs':
-        if inventory.userinventory['pokedollars'] < 50:
+        if inventory.userinventory[uid]['pokedollars'] < 50:
             query.edit_message_text('Sorry, but you cannot afford this item.')
         else:
-            query.edit_message_text('Purchase sucsessful! You now have %s pokeballs and %s pokedollars!'%(inventory.userinventory['balls']['pokeballs'],inventory.userinventory['pokedollars']))
-            inventory.add_pokedollars(-50)
-            inventory.add_pokeballs(10)
+            query.edit_message_text('Purchase sucsessful! You now have %s pokeballs and %s pokedollars!'%(inventory.userinventory[uid]['balls']['pokeballs'],inventory.userinventory[uid]['pokedollars']))
+            inventory.add_pokedollars(uid,-50)
+            inventory.add_pokeballs(uid,10)
 
 def add_shopcmdhandler(dp:Dispatcher):
     dp.add_handler(CommandHandler('shop', shop)) 
