@@ -56,12 +56,15 @@ alomomola = pokemon('Alomomola','Caring Pokemon', 'https://static.wikia.nocookie
 
 altaria = pokemon('Altaria','Humming Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/d/d7/Altaria_BW.gif/revision/latest/top-crop/width/220/height/220?cb=20120622080947', 
                     ['Dragon','Flying'], 'Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokémon makes its listeners experience dreamy wonderment.',
-                     'ahl-TAR-ee-uh', '1.09m', '20.6', ['Swablu','Altaria'], 0, 40,'r', True)   
+                     'ahl-TAR-ee-uh', '1.09m', '20.6kg', ['Swablu','Altaria'], 0, 40,'r', True)   
 
 amaura = pokemon('Amaura','Tundra Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/4/4e/Amaura_XY.gif/revision/latest/scale-to-width-down/52?cb=20140608154517', 
                     ['Dragon','Flying'], 'Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokémon makes its listeners experience dreamy wonderment.',
-                     'ahl-TAR-ee-uh', '1.09m', '20.6', ['Swablu','Altaria'], 0, 40,'r', True)     
+                     'ahl-TAR-ee-uh', '1.09m', '20.6kg', ['Swablu','Altaria'], 0, 40,'r', True)     
 
+ambipom = pokemon('Ambipom','Long Tail Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/8/89/Ambipom_XY.gif/revision/latest/top-crop/width/220/height/220?cb=20150201050425', 
+                    ['Normal'], 'It uses its tails for everything. If it wraps both of its tails around you and gives you a squeeze, that\'s proof it really likes you.',
+                     'AM-bih-pom', '1.2m', '20.3kg', ['Aipom','Ambipom'], 1, 30,'r', False)   
 
 commonpokemons = [
     abra
@@ -74,7 +77,8 @@ uncommonpokemons = [
 
 rarepokemons = [
   aeigslash,
-  absol
+  absol,
+  ambipom
 ]
 
 superrarepokemons = [
@@ -101,5 +105,7 @@ pokemons = [
   aipom,
   alakazam,
   alomomola,
-  altaria
+  altaria,
+  amaura,
+  ambipom
 ]

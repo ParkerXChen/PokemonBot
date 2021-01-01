@@ -50,7 +50,7 @@ def add_item(uid,item):
 
 def add_pokemon(uid,pokemon):
     uid = str(uid)
-    userinventory[uid]['pokemons'].append(pokemon)
+    userinventory[uid]['pokemonstrings'].append(pokemon)
     save()
 
 def add_XP(uid,number):
@@ -75,6 +75,7 @@ def reset(uid):
     userinventory[uid]['balls']['ultraballs'] = 0
     userinventory[uid]['balls']['masterballs'] = 0
     userinventory[uid]['pokemons'] = []
+    userinventory[uid]['pokemonstrings'] = []
     userinventory[uid]['buddy'] = ''
     userinventory[uid]['pokedollars'] = 0
     userinventory[uid]['otheritems'] = []
