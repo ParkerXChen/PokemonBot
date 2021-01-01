@@ -18,7 +18,7 @@ abomasnow = pokemon('Abomasnow','Frost Tree Pokemon', 'https://professorlotus.co
                     ['Grass','Ice'], 'Abomasnows mainly live on snow-covered mountains. They create blizzards to hide themselves and keep others away',
                      'ah-BOM-ah-snow', '2.2m', '135.5kg', ['Snover', 'Abomansnow'], 1, 20, 's', True)
 
-abra = pokemon('Abra','Psi Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/a/aa/Abra-Attackanimation-XY-1.gif/revision/latest/scale-to-width-down/340?cb=20160625005201', 
+abra = pokemon('Abra','Psi Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/2/23/Abra_XY.gif/revision/latest?cb=20150201050424', 
                     ['Physcic'], 'Abra sleeps for 18 hours a day. However, it can sense the presence of foes even while it is sleeping. In such a situation, this Pokémon immediately teleports to safety.',
                     'AH-bra', '0.9m', '19.5kg', ['Abra', 'Kadabra','Alakazam'], 0, 65, 'c', False)
 
@@ -38,7 +38,7 @@ aerodactyl = pokemon('Aerodactyl','Fossil Pokemon', 'https://orig00.deviantart.n
                     ['Rock', 'Flying'], 'Aerodactyl is a Pokémon from the age of dinosaurs. It was regenerated from genetic material extracted from amber. It is imagined to have been the king of the skies in ancient times',
                      'AIR-row-DACK-tyl', '1.8m', '59kg', ['Aerodactyl'], 0, 30, 's', True)
 
-aggron = pokemon('Aggron','Fossil Pokemon', 'https://cdn.staticneo.com/w/pokemon/c/c1/306.gif', 
+aggron = pokemon('Aggron','Fossil Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/e/e2/Aggron_BW.gif/revision/latest/scale-to-width-down/81?cb=20120622080242', 
                     ['Steel', 'Rock'], 'Aggron claims an entire mountain as its own territory. It mercilessly beats up anything that violates its environment. This Pokémon vigilantly patrols its territory at all times.',
                      'AGG-ron', '2.11m', '360kg', ['Aron','Lairon','Aggron'], 2, 20,'s', True)
 
@@ -46,7 +46,7 @@ aipom = pokemon('Aipom','Long Tail Pokemon', 'https://professorlotus.com/Sprites
                     ['Normal'], 'Aipoma\'s tail ends in a hand-like appendage that can be cleverly manipulated. However, because the Pokémon uses its tail so much, its real hands have become rather clumsy.',
                      'AE-pom', '0.79m', '11.5kg', ['Aipom','Ambipom'], 0, 40,'u', False)
 
-alakazam = pokemon('Alakazam','Psi Pokemon', 'https://i.pinimg.com/originals/a3/9e/03/a39e0335bd48c8acbeec42932618aa44.gif', 
+alakazam = pokemon('Alakazam','Psi Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/9/99/Alakazam-AttackAnimation-XY-2.gif/revision/latest/scale-to-width-down/180?cb=20160625012653', 
                     ['Physcic'], 'Alakazam\'s brain continually grows, making its head far too heavy to support with its neck. This Pokémon holds its head up using its psychokinetic power instead.',
                      'AH-la-kuh-ZAM', '1.5m', '48kg', ['Abra', 'Kadabra','Alakazam'], 0, 30,'s', True)
 
@@ -56,7 +56,11 @@ alomomola = pokemon('Alomomola','Caring Pokemon', 'https://static.wikia.nocookie
 
 altaria = pokemon('Altaria','Humming Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/d/d7/Altaria_BW.gif/revision/latest/top-crop/width/220/height/220?cb=20120622080947', 
                     ['Dragon','Flying'], 'Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokémon makes its listeners experience dreamy wonderment.',
-                     'ahl-TAR-ee-uh', '1.09m', '20.6', ['Swablu','Altaria'], 0, 40,'r', True)    
+                     'ahl-TAR-ee-uh', '1.09m', '20.6', ['Swablu','Altaria'], 0, 40,'r', True)   
+
+amaura = pokemon('Amaura','Tundra Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/4/4e/Amaura_XY.gif/revision/latest/scale-to-width-down/52?cb=20140608154517', 
+                    ['Dragon','Flying'], 'Altaria dances and wheels through the sky among billowing, cotton-like clouds. By singing melodies in its crystal-clear voice, this Pokémon makes its listeners experience dreamy wonderment.',
+                     'ahl-TAR-ee-uh', '1.09m', '20.6', ['Swablu','Altaria'], 0, 40,'r', True)     
 
 
 commonpokemons = [
