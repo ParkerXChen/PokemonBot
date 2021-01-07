@@ -33,9 +33,9 @@ def set_buddy(uid,buddy):
     save()
 
 
-def add_pokeballs(uid,number):
+def add_balls(uid,balltype,number):
     uid = str(uid)
-    userinventory[uid]['balls']['pokeballs'] += number
+    userinventory[uid]['balls'][balltype] += number
     save()
 
 def add_pokedollars(uid,number):
@@ -50,7 +50,7 @@ def add_item(uid,item):
 
 def add_pokemon(uid,pokemon):
     uid = str(uid)
-    userinventory[uid]['pokemonstrings'].append(pokemon)
+    userinventory[uid]['pokemons'].append(pokemon)
     save()
 
 def add_XP(uid,number):
@@ -75,7 +75,6 @@ def reset(uid):
     userinventory[uid]['balls']['ultraballs'] = 0
     userinventory[uid]['balls']['masterballs'] = 0
     userinventory[uid]['pokemons'] = []
-    userinventory[uid]['pokemonstrings'] = []
     userinventory[uid]['buddy'] = ''
     userinventory[uid]['pokedollars'] = 0
     userinventory[uid]['otheritems'] = []

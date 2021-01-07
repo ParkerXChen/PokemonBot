@@ -18,11 +18,11 @@ abomasnow = pokemon('Abomasnow','Frost Tree Pokemon', 'https://professorlotus.co
                     ['Grass','Ice'], 'Abomasnows mainly live on snow-covered mountains. They create blizzards to hide themselves and keep others away',
                      'ah-BOM-ah-snow', '2.2m', '135.5kg', ['Snover', 'Abomansnow'], 1, 20, 's', True)
 
-abra = pokemon('Abra','Psi Pokemon', 'https://static.wikia.nocookie.net/pokemon/images/2/23/Abra_XY.gif/revision/latest?cb=20150201050424', 
+abra = pokemon('Abra','Psi Pokemon', 'https://static.myshinylist.com/img/sprites/all/abra.gif', 
                     ['Physcic'], 'Abra sleeps for 18 hours a day. However, it can sense the presence of foes even while it is sleeping. In such a situation, this Pokémon immediately teleports to safety.',
                     'AH-bra', '0.9m', '19.5kg', ['Abra', 'Kadabra','Alakazam'], 0, 65, 'c', False)
 
-absol = pokemon('Absol','Disaster Pokemon', 'https://25.media.tumblr.com/70d7556faa226805d27ec8f2110febd4/tumblr_mpxv74KloG1rumlrno3_500.gif', 
+absol = pokemon('Absol','Disaster Pokemon', 'https://professorlotus.com/Sprites/Absol.gif', 
                     ['Dark'], 'Every time Absol appears before people, it is followed by a disaster such as an earthquake or a tidal wave. As a result, it came to be known as the disaster Pokémon.',
                      'AB-sol', '1.19m', '47kg', ['Absol'], 0, 40, 'r', False)
 

@@ -9,21 +9,20 @@ def pokedex(update, context):
         update.message.reply_text('Use the /pokedex command followed by the name of a pokemon to search it up on your pokedex! A list of all of the pokemon in the game:\n%s'%(allpokemons))
     else:
         Types = ''
-        evolutionline = ''
+        evolutionline = 'evolutionline'
         pokemonchosen = context.args[0].capitalize()
         for i in pokemons.pokemons:
             if pokemonchosen == i.name:
                 pokemonobject = i
                 if pokemonchosen in pokemons.pokemons:
                     for i in pokemonchosen.type:
-                        if len(pokemonchosen.type) == 1:
-                            Types += '%s'%(i)
-                        else:
-                            Types += '%s,'%(i)
+                        Types = Types + f'{i},'
+                        print(Types)
+                    
                     for i in pokemonchosen.evolutionline:
                         evolutionline += '%s➡'%(i)
                     evolutionline = evolutionline[:-1]
-                msg = '''%s\nThe %s\n\nDescription:\n%s\n\nStats:\nType(s):%s\nWeight: %s\nHeight: %s\n\nEvolution line:\n%s
+                msg = '''%s\nThe %s\n\nDescription:\n%s\n\nStats:\nType(s): %s\nWeight: %s\nHeight: %s\n\nEvolution line:\n%s
                 '''%(pokemonchosen.capitalize(),pokemonobject.nickname,pokemonobject.description,Types,pokemonobject.weight,pokemonobject.height,evolutionline)
                 update.message.reply_animation(pokemonobject.giflink,caption=msg)
                 break

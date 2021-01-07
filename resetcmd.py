@@ -12,8 +12,9 @@ def reset(update, context):
 def resetcallback(update, context):
     query = update.callback_query
     if query.data == 'YorN1:yes':
+        uid = str(query.from_user.id)
         msg = 'Your game has been reset.'
-        inventory.reset()
+        inventory.reset(uid)
     else:
         msg = 'No? OK.'
     query.edit_message_text(msg)
