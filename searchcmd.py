@@ -95,13 +95,12 @@ def searchcallback(update, context):
         # print(number)
         
         if query.data == 'ballchoice:pokeball':
-            pass
             ballused = 'pokeballs'
         elif query.data == 'ballchoice:greatball':
-            catchrate += 10
+            catchrate *= 1.5
             ballused = 'greatballs'
         elif query.data == 'ballchoice:ultraball':
-            catchrate += 20
+            catchrate *= 2
             ballused = 'ultraballs'
         elif query.data == 'ballchoice:masterball':
             catchrate = 100
@@ -137,7 +136,7 @@ def searchcallback(update, context):
             # b = InputMediaAnimation(media=open('/Users/Parker/work/PokemonBot/PokeballFail.gif'))
             b = InputMediaAnimation(media='https://media.tenor.com/images/37acc4234291468b6bb1884e3916a341/tenor.gif')
             query.edit_message_media(b)
-            query.edit_message_caption('%s broke out of the pokeball!'%(pokemonchosenstr))
+            query.edit_message_caption('%s broke out of the %s'%(pokemonchosenstr,ballused))
             number = random.randint(1,3)
             inventory.add_balls(uid,ballused,1)
             choosenewpokemon()
