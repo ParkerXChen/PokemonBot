@@ -15,16 +15,16 @@ def travel(update, context):
 
 def travelcallback2(update, context):
     query = update.callback_query
-    user = update.effective_user
-    inventory.check_uid(user.id)
+    uid = str(query.from_user.id)
+    inventory.check_uid(uid)
     if query.data == 'location:professorshouse':
-        if inventory.userinventory[user.id]['started'] == False:
+        if inventory.userinventory[uid]['started'] == False:
             inventory.check_uid
-            query.edit_message_text("Hello %s! I\'m Pokemon professor Parker! heard you wanted to become a pokèmon trainer, so I\'m here to help you! Here is a pokedex, 6 pokeballs, and 100 pokedollars. Also, you can choose your starter pokemon:"%(user.first_name),reply_markup=choosestarterkb)
-            inventory.add_pokedollars(user.id,100)
-            inventory.add_balls(user.id,'pokeballs',6)
-            inventory.add_item(user.id,'pokedex')
-            inventory.userinventory[user.id]['started'] = True
+            query.edit_message_text("Hello %s! I\'m Pokemon professor Parker! heard you wanted to become a pokèmon trainer, so I\'m here to help you! Here is a pokedex, 6 pokeballs, and 100 pokedollars. Also, you can choose your starter pokemon:"%(query.from_user.first_name),reply_markup=choosestarterkb)
+            inventory.add_pokedollars(uid,100)
+            inventory.add_balls(uid,'pokeballs',6)
+            inventory.add_item(uid,'pokedex')
+            inventory.userinventory[uid]['started'] = True
             inventory.save()
         else: 
             query.edit_message_text('Hello again! Are you making good progress on your journey?')

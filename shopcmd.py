@@ -18,16 +18,16 @@ def shopcallback(update, context):
         if inventory.userinventory[uid]['pokedollars'] < 50:
             query.edit_message_text('Sorry, but you cannot afford this item.')
         else:
-            query.edit_message_text('Purchase sucsessful! You now have %s pokeballs and %s pokedollars!'%(inventory.userinventory[uid]['balls']['pokeballs'],inventory.userinventory[uid]['pokedollars']))
             inventory.add_pokedollars(uid,-50)
             inventory.add_balls(uid,'pokeballs',10)
+            query.edit_message_text('Purchase sucsessful! You now have %s pokeballs and %s pokedollars!'%(inventory.userinventory[uid]['balls']['pokeballs'],inventory.userinventory[uid]['pokedollars']))
     elif query.data == 'buy:fiftypokeballs':
         if inventory.userinventory[uid]['pokedollars'] < 200:
             query.edit_message_text('Sorry, but you cannot afford this item.')
         else:
-            query.edit_message_text('Purchase sucsessful! You now have %s pokeballs and %s pokedollars!'%(inventory.userinventory[uid]['balls']['pokeballs'],inventory.userinventory[uid]['pokedollars']))
             inventory.add_pokedollars(uid,-200)
-            inventory.add_balls(uid,'pokeballs',50)
+            inventory.add_balls(uid,'pokeballs',50)            
+            query.edit_message_text('Purchase sucsessful! You now have %s pokeballs and %s pokedollars!'%(inventory.userinventory[uid]['balls']['pokeballs'],inventory.userinventory[uid]['pokedollars']))
 
 def add_shopcmdhandler(dp:Dispatcher):
     dp.add_handler(CommandHandler('shop', shop)) 
