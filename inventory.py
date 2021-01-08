@@ -19,10 +19,10 @@ def check_uid(uid):
             },
             "buddy": "",
             "pokemons": [],
-            "otheritems": [],
             "pokedollars": 0,
             "codesredeemed": [],
-            "started": False
+            "started": False,
+            "Spawnedpokemon": False
         }
     save()
 
@@ -32,6 +32,15 @@ def set_buddy(uid,buddy):
     userinventory[uid]['buddy'] = buddy
     save()
 
+def set_yesspawnedpokemon(uid):
+    uid = str(uid)
+    userinventory[uid]['spawnedpokemon'] = True
+    save()
+
+def set_nospawnedpokemon(uid):
+    uid = str(uid)
+    userinventory[uid]['spawnedpokemon'] = False
+    save()
 
 def add_balls(uid,balltype,number):
     uid = str(uid)
@@ -41,11 +50,6 @@ def add_balls(uid,balltype,number):
 def add_pokedollars(uid,number):
     uid = str(uid)
     userinventory[uid]['pokedollars'] += number
-    save()
-
-def add_item(uid,item):
-    uid = str(uid)
-    userinventory[uid]['otheritems'].append(item)
     save()
 
 def add_pokemon(uid,pokemon):

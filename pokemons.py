@@ -20,7 +20,7 @@ abomasnow = pokemon('Abomasnow','Frost Tree Pokemon', 'https://professorlotus.co
 
 abra = pokemon('Abra','Psi Pokemon', 'https://static.myshinylist.com/img/sprites/all/abra.gif', 
                     ['Physcic'], 'Abra sleeps for 18 hours a day. However, it can sense the presence of foes even while it is sleeping. In such a situation, this Pokémon immediately teleports to safety.',
-                    'AH-bra', '0.9m', '19.5kg', ['Abra', 'Kadabra','Alakazam'], 0, 65, 'c', False)
+                    'AH-bra', '0.9m', '19.5kg', ['Abra', 'Kadabra','Alakazam'], 0, 50, 'c', False)
 
 absol = pokemon('Absol','Disaster Pokemon', 'https://professorlotus.com/Sprites/Absol.gif', 
                     ['Dark'], 'Every time Absol appears before people, it is followed by a disaster such as an earthquake or a tidal wave. As a result, it came to be known as the disaster Pokémon.',
@@ -67,18 +67,18 @@ ambipom = pokemon('Ambipom','Long Tail Pokemon', 'https://static.wikia.nocookie.
                      'AM-bih-pom', '1.2m', '20.3kg', ['Aipom','Ambipom'], 1, 30,'r', False)   
 
 commonpokemons = [
-    abra
+    abra,
+    aipom
 ]
 
 uncommonpokemons = [
     accelgor,
-    aipom
+    ambipom
 ]
 
 rarepokemons = [
   aeigslash,
-  absol,
-  ambipom
+  absol
 ]
 
 superrarepokemons = [

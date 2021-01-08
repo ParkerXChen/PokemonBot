@@ -3,11 +3,11 @@ import locationslist, inventory
 from telegram import BotCommand,InlineKeyboardMarkup,InlineKeyboardButton
 
 squritlebutton = InlineKeyboardButton('Squirtle',callback_data='choose:Squirtle')
-bulbasourbutton = InlineKeyboardButton('Bulbasour',callback_data='choose:Bulbasaur')
+bulbasourbutton = InlineKeyboardButton('Bulbasaur',callback_data='choose:Bulbasaur')
 charmanderbutton = InlineKeyboardButton('Charmander',callback_data='choose:Charmander')
 choosestarterkb = InlineKeyboardMarkup([[squritlebutton, bulbasourbutton, charmanderbutton]])
 
-professorshousebutton = InlineKeyboardButton('Professor Parker\'s House',callback_data='location:professorshouse')
+professorshousebutton = InlineKeyboardButton('Professor Maple\'s House',callback_data='location:professorshouse')
 chooselocationkb = InlineKeyboardMarkup([[professorshousebutton]])
 
 def travel(update, context):
@@ -20,10 +20,9 @@ def travelcallback2(update, context):
     if query.data == 'location:professorshouse':
         if inventory.userinventory[uid]['started'] == False:
             inventory.check_uid
-            query.edit_message_text("Hello %s! I\'m Pokemon professor Parker! heard you wanted to become a pokèmon trainer, so I\'m here to help you! Here is a pokedex, 6 pokeballs, and 100 pokedollars. Also, you can choose your starter pokemon:"%(query.from_user.first_name),reply_markup=choosestarterkb)
-            inventory.add_pokedollars(uid,100)
+            query.edit_message_text("Hello %s! I\'m Pokemon professor Maple! heard you wanted to become a pokèmon trainer, so I\'m here to help you! Here is are 6 pokeballs and 10000 pokedollars. Also, you can choose your starter pokemon:"%(query.from_user.first_name),reply_markup=choosestarterkb)
+            inventory.add_pokedollars(uid,10000)
             inventory.add_balls(uid,'pokeballs',6)
-            inventory.add_item(uid,'pokedex')
             inventory.userinventory[uid]['started'] = True
             inventory.save()
         else: 

@@ -67,20 +67,23 @@ def search(update, context):
     balls = []
     uid = str(update.message.from_user.id)
     inventory.check_uid(uid)
-    realinventory = inventory.userinventory[uid]
+    if not inventory.userinventory[uid]['Spawnedpokemon'] == True:
+        realinventory = inventory.userinventory[uid]
     
-    if not realinventory['balls']['pokeballs'] <= 0:
-        balls.append(pokeballbutton)
-    if not realinventory['balls']['greatballs'] == 0:
-        balls.append(greatballbutton)
-    if not realinventory['balls']['ultraballs'] == 0:
-        balls.append(ultraballbutton)
-    if not realinventory['balls']['masterballs'] == 0:
-        balls.append(masterballbutton)
+        if not realinventory['balls']['pokeballs'] <= 0:
+            balls.append(pokeballbutton)
+        if not realinventory['balls']['greatballs'] == 0:
+            balls.append(greatballbutton)
+        if not realinventory['balls']['ultraballs'] == 0:
+            balls.append(ultraballbutton)
+        if not realinventory['balls']['masterballs'] == 0:
+            balls.append(masterballbutton)
 
-    ballchoicekb = InlineKeyboardMarkup([balls])
-    update.message.reply_animation(pokemonchosen.giflink,caption='A wild %s appeared! \n\nRarity: %s (%s%%). \nBase catchrate: %s\n\nWhat ball do you want to use on it?'%(pokemonchosenstr,pokemonchosenrarity,raritypercent,pokemonchosen.catchRate),reply_markup=ballchoicekb)
-
+        ballchoicekb = InlineKeyboardMarkup([balls])
+        inventory.set_yesspawnedpokemon(uid)
+        update.message.reply_animation(pokemonchosen.giflink,caption='A wild %s appeared! \n\nRarity: %s (%s%%). \nBase catchrate: %s\n\nWhat ball do you want to use on it?'%(pokemonchosenstr,pokemonchosenrarity,raritypercent,pokemonchosen.catchRate),reply_markup=ballchoicekb)
+    else:
+        update.message.reply_text('Sorry, but you already spawned a pokemon. Please catch that one before spawning another one.')
 
 def searchcallback(update, context):
         global pokemonchosen
@@ -115,14 +118,13 @@ def searchcallback(update, context):
             query.edit_message_media(a)
 
             inventory.add_pokemon(uid,pokemonchosenstr)
-            inventory.add_balls(uid,ballused,1)
-            number = random.randint(1,3)    
-            choosenewpokemon()
+            inventory.add_balls(uid,ballused,-1)
+            number = random.randint(1,3)   
             number = random.randint(1,100)    
             inventory.add_XP(uid,XPreward)
             inventory.add_pokedollars(uid,pokedollarsreward)
             
-            query.edit_message_caption('Nice job! You captured the %s!\n\nYour catchrate: %s%%.\n\nBalls left:\n\nPokeballs: %s\nGreatballs: %s\nUltraballs: %s\nMasterballs: %s\n\nYou earned %s XP and %s Pokedollars!'%(
+            query.edit_message_caption('Nice job! You captured the %s!\n\nYour catchrate: %s%%.\n\nBalls left:\n\nx%s Pokeballs\nx%s Greatballs \nx%s Ultraballs\nx%s Masterballs\n\nYou earned %s XP and %s Pokedollars!'%(
             pokemonchosenstr,
             catchrate,
             inventory.userinventory[uid]['balls']['pokeballs'],
@@ -132,11 +134,12 @@ def searchcallback(update, context):
             XPreward,
             pokedollarsreward
             ))
+            choosenewpokemon()
         else:
             # b = InputMediaAnimation(media=open('/Users/Parker/work/PokemonBot/PokeballFail.gif'))
-            b = InputMediaAnimation(media='https://media.tenor.com/images/37acc4234291468b6bb1884e3916a341/tenor.gif')
+            b = InputMediaAnimation(media='https://i.imgur.com/RV6jD6c.gif')
             query.edit_message_media(b)
-            query.edit_message_caption('%s broke out of the %s'%(pokemonchosenstr,ballused))
+            query.edit_message_caption('%s broke out of the %s!\n\nRarity: %s (%s%%)\n\nYour catchrate: %s%%'%(pokemonchosenstr,ballused[:-1],pokemonchosenrarity,raritypercent,catchrate))
             number = random.randint(1,3)
             inventory.add_balls(uid,ballused,1)
             choosenewpokemon()
