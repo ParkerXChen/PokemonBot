@@ -67,6 +67,8 @@ def search(update, context):
     balls = []
     uid = str(update.message.from_user.id)
     inventory.check_uid(uid)
+    
+    print(inventory.userinventory[uid]['Spawnedpokemon'])
     if not inventory.userinventory[uid]['Spawnedpokemon'] == True:
         realinventory = inventory.userinventory[uid]
     

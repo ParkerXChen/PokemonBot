@@ -34,7 +34,7 @@ def set_buddy(uid,buddy):
 
 def set_yesspawnedpokemon(uid):
     uid = str(uid)
-    userinventory[uid]['spawnedpokemon'] = True
+    userinventory[uid]['Spawnedpokemon'] = True
     save()
 
 def set_nospawnedpokemon(uid):
