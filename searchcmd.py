@@ -137,6 +137,7 @@ def searchcallback(update, context):
             pokedollarsreward
             ))
             choosenewpokemon()
+            inventory.set_nospawnedpokemon(uid)
         else:
             # b = InputMediaAnimation(media=open('/Users/Parker/work/PokemonBot/PokeballFail.gif'))
             b = InputMediaAnimation(media='https://i.imgur.com/RV6jD6c.gif')
@@ -145,7 +146,8 @@ def searchcallback(update, context):
             number = random.randint(1,3)
             inventory.add_balls(uid,ballused,1)
             choosenewpokemon()
-            number = random.randint(1,100)    
+            number = random.randint(1,100)
+            inventory.set_nospawnedpokemon(uid)    
                 
 def add_searchhandler(dp:Dispatcher):
     dp.add_handler(CommandHandler('search', search))

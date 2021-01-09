@@ -39,7 +39,7 @@ def set_yesspawnedpokemon(uid):
 
 def set_nospawnedpokemon(uid):
     uid = str(uid)
-    userinventory[uid]['spawnedpokemon'] = False
+    userinventory[uid]['Spawnedpokemon'] = False
     save()
 
 def add_balls(uid,balltype,number):
