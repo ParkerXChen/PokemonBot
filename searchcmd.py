@@ -119,7 +119,7 @@ def searchcallback(update, context):
             a = InputMediaAnimation(media='https://i.gifer.com/MfJw.gif')
             query.edit_message_media(a)
 
-            inventory.add_pokemon(uid,pokemonchosenstr)
+            inventory.add_pokemon(uid,pokemonchosen)
             inventory.add_balls(uid,ballused,-1)
             number = random.randint(1,3)   
             number = random.randint(1,100)    
@@ -144,7 +144,7 @@ def searchcallback(update, context):
             query.edit_message_media(b)
             query.edit_message_caption('%s broke out of the %s!\n\nRarity: %s (%s%%)\n\nYour catchrate: %s%%'%(pokemonchosenstr,ballused[:-1],pokemonchosenrarity,raritypercent,catchrate))
             number = random.randint(1,3)
-            inventory.add_balls(uid,ballused,1)
+            inventory.add_balls(uid,ballused,-1)
             choosenewpokemon()
             number = random.randint(1,100)
             inventory.set_nospawnedpokemon(uid)    

@@ -1,4 +1,5 @@
 import config
+import random
 
 userinventory = config.CONFIG['userinventory']
 nextlevel = 0
@@ -54,7 +55,8 @@ def add_pokedollars(uid,number):
 
 def add_pokemon(uid,pokemon):
     uid = str(uid)
-    userinventory[uid]['pokemons'].append(pokemon)
+    statsdict = {f"{'name':pokemon.name,'Health:':random.randint(pokemon.minhp,pokemon.maxhp),'Damage:':random.randint(pokemon.mindp,pokemon.maxdp)}
+    userinventory[uid]['pokemons'].append(statsdict)
     save()
 
 def add_XP(uid,number):
