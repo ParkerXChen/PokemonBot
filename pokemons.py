@@ -57,8 +57,8 @@ amoongus = pokemon('Amoonguss','https://cdn.bulbagarden.net/upload/d/d2/Spr_5b_5
 ampharos = pokemon('Ampharios','hhttps://professorlotus.com/Sprites/Ampharos.gif', 
                     ['Electric'], ['Mareep','Flaafy','Ampharos'], 1, 30,'r',75,150,75,150)   
 
-anorith = pokemon('Ampharios','hhttps://professorlotus.com/Sprites/Ampharos.gif', 
-                    ['Electric'], ['Mareep','Flaafy','Ampharos'], 1, 30,'r',75,150,75,150)   
+anorith = pokemon('Anorith','https://professorlotus.com/Sprites/Anorith.gif', 
+                    ['Rock','Bug'], ['Anorith','Armaldo'], 1, 45,'u',35,75,35,75)   
  
 bulbasaur = pokemon('Bulbasaur','https://professorlotus.com/Sprites/Bulbasaur.gif8', 
                     ['Grass','Poison'], ['Bulbasaur','Ivysaur','Venosaur'], 0, 45,'u',50,75,35,65)   
