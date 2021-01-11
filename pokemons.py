@@ -12,13 +12,13 @@ class pokemon:
     self.mindp = mindp
     self.maxdp = maxdp
 
-abomasnow = pokemon('Abomasnow','https://static.wikia.nocookie.net/pokemon/images/7/7c/BWAbomasnowF.gif/revision/latest/scale-to-width-down/95?cb=20190330203119', 
+abomasnow = pokemon('Abomasnow','https://professorlotus.com/Sprites/Abomasnow.gif', 
                     ['Grass','Ice'],['Snover', 'Abomansnow'], 1, 20, 's',75,150,75,150)
 
-abra = pokemon('Abra','https://static.wikia.nocookie.net/pokemon/images/2/23/Abra_XY.gif/revision/latest/scale-to-width-down/69?cb=20150201050424', 
+abra = pokemon('Abra','https://professorlotus.com/Sprites/Abra.gif', 
                     ['Physcic'], ['Abra', 'Kadabra','Alakazam'], 0, 50, 'c',25,75,25,50)
 
-absol = pokemon('Absol','https://static.wikia.nocookie.net/pokemon/images/0/00/Absol_XY.gif/revision/latest/scale-to-width-down/59?cb=20141113050137', 
+absol = pokemon('Absol','https://professorlotus.com/Sprites/Absol.gif', 
                     ['Dark'], ['Absol'], 0, 40, 'r',75,135,75,100)
 
 accelgor = pokemon('Accelgor','https://static.wikia.nocookie.net/pokemon/images/3/30/Accelgor_XY.gif/revision/latest/scale-to-width-down/92?cb=20140819074254', 
@@ -27,13 +27,13 @@ accelgor = pokemon('Accelgor','https://static.wikia.nocookie.net/pokemon/images/
 aeigslash = pokemon('Aegislash','https://static.wikia.nocookie.net/pokemon/images/0/07/Aegislash_Blade_SS.gif/revision/latest/top-crop/width/220/height/220?cb=20200108225953', 
                     ['Steel', 'Ghost'], ['Honedge', 'Doublade', 'Aegislash'], 2, 40, 'r',75,100,75,100)
 
-aerodactyl = pokemon('Aerodactyl','https://static.wikia.nocookie.net/pokemon/images/a/ad/Aerodactyl_XY.gif/revision/latest/scale-to-width-down/189?cb=20141019040258', 
+aerodactyl = pokemon('Aerodactyl','https://professorlotus.com/Sprites/Aerodactyl.gif', 
                     ['Rock', 'Flying'], ['Aerodactyl'], 0, 30, 's',75,150,100,150)
 
-aggron = pokemon('Aggron','https://static.wikia.nocookie.net/pokemon/images/e/e2/Aggron_BW.gif/revision/latest/scale-to-width-down/81?cb=20120622080242', 
+aggron = pokemon('Aggron','https://professorlotus.com/Sprites/Aggron.gif', 
                     ['Steel', 'Rock'], ['Aron','Lairon','Aggron'], 2, 20,'s',75,150,100,150)
 
-aipom = pokemon('Aipom','https://static.wikia.nocookie.net/pokemon/images/1/17/Aipom_XY.gif/revision/latest/scale-to-width-down/63?cb=20150118044437', 
+aipom = pokemon('Aipom','https://professorlotus.com/Sprites/Aipom.gif', 
                     ['Normal'], ['Aipom','Ambipom'], 0, 40,'u',25,75,25,75)
 
 alakazam = pokemon('Alakazam','https://static.wikia.nocookie.net/pokemon/images/9/99/Alakazam-AttackAnimation-XY-2.gif/revision/latest/scale-to-width-down/180?cb=20160625012653', 
@@ -52,7 +52,7 @@ ambipom = pokemon('Ambipom','https://static.wikia.nocookie.net/pokemon/images/8/
                     ['Normal'], ['Aipom','Ambipom'], 1, 30,'r',50,75,75,125)   
 
 amoongus = pokemon('Amoonguss','https://static.wikia.nocookie.net/pokemon/images/d/dd/Amoonguss_XY.gif/revision/latest/scale-to-width-down/78?cb=20140816055327', 
-                    ['Grass','Poison'], ['Foongus','Amoongus','Venosaur'], 1, 45,'u',50,125,50,125)  
+                    ['Grass','Poison'], ['Foongus','Amoongus'], 1, 45,'u',50,125,50,125)  
 
 ampharos = pokemon('Ampharios','https://static.wikia.nocookie.net/pokemon/images/c/cb/Ampharos_XY.gif/revision/latest/scale-to-width-down/69?cb=20150201050425', 
                     ['Electric'], ['Mareep','Flaafy','Ampharos'], 1, 30,'r',75,150,75,150)   
