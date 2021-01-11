@@ -55,7 +55,7 @@ def add_pokedollars(uid,number):
 
 def add_pokemon(uid,pokemon):
     uid = str(uid)
-    statsdict = {f"{'name':pokemon.name,'Health:':random.randint(pokemon.minhp,pokemon.maxhp),'Damage:':random.randint(pokemon.mindp,pokemon.maxdp)}
+    statsdict = {'name':pokemon.name,'health':random.randint(pokemon.minhp,pokemon.maxhp),'damage':random.randint(pokemon.mindp,pokemon.maxdp)}
     userinventory[uid]['pokemons'].append(statsdict)
     save()
 
