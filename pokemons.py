@@ -36,34 +36,34 @@ aggron = pokemon('Aggron','https://professorlotus.com/Sprites/Aggron.gif',
 aipom = pokemon('Aipom','https://professorlotus.com/Sprites/Aipom.gif', 
                     ['Normal'], ['Aipom','Ambipom'], 0, 40,'u',25,75,25,75)
 
-alakazam = pokemon('Alakazam','https://static.wikia.nocookie.net/pokemon/images/9/99/Alakazam-AttackAnimation-XY-2.gif/revision/latest/scale-to-width-down/180?cb=20160625012653', 
+alakazam = pokemon('Alakazam','https://professorlotus.com/Sprites/Alakazam.gif', 
                     ['Physcic'], ['Abra', 'Kadabra','Alakazam'], 0, 30,'s',75,125,75,150)
 
-alomomola = pokemon('Alomomola','https://static.wikia.nocookie.net/pokemon/images/8/8d/Alomomola_BW.gif/revision/latest/scale-to-width-down/38?cb=20120415140141', 
+alomomola = pokemon('Alomomola','https://cdn.bulbagarden.net/upload/a/aa/Spr_5b_594.png', 
                     ['Water'], ['Alomomola'], 0, 40,'r',50,75,50,75)   
 
-altaria = pokemon('Altaria','https://static.wikia.nocookie.net/pokemon/images/d/d7/Altaria_BW.gif/revision/latest/top-crop/width/220/height/220?cb=20120622080947', 
+altaria = pokemon('Altaria','https://professorlotus.com/Sprites/Altaria.gif', 
                     ['Dragon','Flying'], ['Swablu','Altaria'], 0, 40,'r',75,100,50,100)   
 
-amaura = pokemon('Amaura','https://static.wikia.nocookie.net/pokemon/images/4/4e/Amaura_XY.gif/revision/latest/scale-to-width-down/52?cb=20140608154517', 
+amaura = pokemon('Amaura','https://www.pkparaiso.com/imagenes/xy/sprites/animados/amaura.gif', 
                     ['Dragon','Flying'], ['Swablu','Altaria'], 0, 40,'r',75,100,75,125)     
 
-ambipom = pokemon('Ambipom','https://static.wikia.nocookie.net/pokemon/images/8/89/Ambipom_XY.gif/revision/latest/scale-to-width-down/104?cb=20150201050425', 
+ambipom = pokemon('Ambipom','https://professorlotus.com/Sprites/Ambipom.gif', 
                     ['Normal'], ['Aipom','Ambipom'], 1, 30,'r',50,75,75,125)   
 
-amoongus = pokemon('Amoonguss','https://static.wikia.nocookie.net/pokemon/images/d/dd/Amoonguss_XY.gif/revision/latest/scale-to-width-down/78?cb=20140816055327', 
+amoongus = pokemon('Amoonguss','https://cdn.bulbagarden.net/upload/d/d2/Spr_5b_591.png', 
                     ['Grass','Poison'], ['Foongus','Amoongus'], 1, 45,'u',50,125,50,125)  
 
-ampharos = pokemon('Ampharios','https://static.wikia.nocookie.net/pokemon/images/c/cb/Ampharos_XY.gif/revision/latest/scale-to-width-down/69?cb=20150201050425', 
+ampharos = pokemon('Ampharios','hhttps://professorlotus.com/Sprites/Ampharos.gif', 
                     ['Electric'], ['Mareep','Flaafy','Ampharos'], 1, 30,'r',75,150,75,150)   
  
-bulbasaur = pokemon('Bulbasaur','https://static.wikia.nocookie.net/pokemon/images/9/9b/Bulbasaur_LGPE.gif/revision/latest/scale-to-width-down/178?cb=20191102161018', 
+bulbasaur = pokemon('Bulbasaur','https://professorlotus.com/Sprites/Bulbasaur.gif8', 
                     ['Grass','Poison'], ['Bulbasaur','Ivysaur','Venosaur'], 0, 45,'u',50,75,35,65)   
 
-charmander = pokemon('Charmander','https://static.wikia.nocookie.net/pokemon/images/f/f5/Charmander_XY.gif/revision/latest/scale-to-width-down/48?cb=20150201050431', 
+charmander = pokemon('Charmander','https://professorlotus.com/Sprites/Charmander.gif', 
                     ['Fire'], ['Charmander','Charmander','Charizard'], 0, 45,'u',50,75,35,65)  
 
-squirtle = pokemon('Squirtle','https://static.wikia.nocookie.net/pokemon/images/4/44/Squirtle_XY_Shiny_Sprite.gif/revision/latest/scale-to-width-down/53?cb=20141031154331', 
+squirtle = pokemon('Squirtle','https://professorlotus.com/Sprites/Squirtle.gif', 
                     ['Water'], ['Squirtle','Wartortle','Blastoise'], 0, 45,'u',50,75,35,65)  
 
 
