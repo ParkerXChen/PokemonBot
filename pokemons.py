@@ -52,7 +52,10 @@ ambipom = pokemon('Ambipom','https://static.wikia.nocookie.net/pokemon/images/8/
                     ['Normal'], ['Aipom','Ambipom'], 1, 30,'r',50,75,75,125)   
 
 amoongus = pokemon('Amoonguss','https://static.wikia.nocookie.net/pokemon/images/d/dd/Amoonguss_XY.gif/revision/latest/scale-to-width-down/78?cb=20140816055327', 
-                    ['Grass','Poison'], ['Foongus','Amoongus','Venosaur'], 1, 30,'u',50,125,50,125)   
+                    ['Grass','Poison'], ['Foongus','Amoongus','Venosaur'], 1, 45,'u',50,125,50,125)  
+
+ampharos = pokemon('Ampharios','https://static.wikia.nocookie.net/pokemon/images/c/cb/Ampharos_XY.gif/revision/latest/scale-to-width-down/69?cb=20150201050425', 
+                    ['Electric'], ['Mareep','Flaafy','Ampharos'], 1, 30,'r',75,150,75,150)   
  
 bulbasaur = pokemon('Bulbasaur','https://static.wikia.nocookie.net/pokemon/images/9/9b/Bulbasaur_LGPE.gif/revision/latest/scale-to-width-down/178?cb=20191102161018', 
                     ['Grass','Poison'], ['Bulbasaur','Ivysaur','Venosaur'], 0, 45,'u',50,75,35,65)   
