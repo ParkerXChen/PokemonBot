@@ -57,8 +57,8 @@ def add_pokemon(uid,pokemon):
     uid = str(uid)
     health = random.randint(pokemon.minhp,pokemon.maxhp)
     damage = random.randint(pokemon.mindp,pokemon.maxdp)
-    power = round(health*damage/2)
-    statsdict = {'name':pokemon.name,'health':health,'damage ':damage,'power':power}
+    power = round(health*damage/3)
+    statsdict = {'name':pokemon.name,'health':health,'damage':damage,'power':power}
     userinventory[uid]['pokemons'].append(statsdict)
     save()
 

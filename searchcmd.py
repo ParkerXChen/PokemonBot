@@ -126,11 +126,12 @@ def searchcallback(update, context):
             inventory.add_XP(uid,XPreward)
             inventory.add_pokedollars(uid,pokedollarsreward)
             
-            query.edit_message_caption('Congratulations, %s!\n You captured the %s with a %s!\n\nYour catchrate: %s%%.\n\nBalls left:\n\nx%s Pokeballs\nx%s Greatballs \nx%s Ultraballs\nx%s Masterballs\n\nYou earned %s XP and %s Pokedollars!'%(
+            query.edit_message_caption('Congratulations, %s!\nYou captured the %s with a %s!\nRarity: %s\n\nYour catchrate: %s%%.\n\nBalls left:\n\nx%s Pokeballs\nx%s Greatballs \nx%s Ultraballs\nx%s Masterballs\n\nYou earned %s XP and %s Pokedollars!'%(
             
-            query.from_user.id,
+            query.from_user.first_name,
             pokemonchosenstr,
             ballused.capitalize()[:-1],
+            pokemonchosenrarity,
             catchrate,
             inventory.userinventory[uid]['balls']['pokeballs'],
             inventory.userinventory[uid]['balls']['greatballs'],
