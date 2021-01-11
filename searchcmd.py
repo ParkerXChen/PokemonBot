@@ -85,7 +85,7 @@ def search(update, context):
         inventory.set_yesspawnedpokemon(uid)
         update.message.reply_animation(pokemonchosen.giflink,caption='A wild %s appeared! \n\nRarity: %s (%s%%). \nBase catchrate: %s\n\nWhat ball do you want to use on it?'%(pokemonchosenstr,pokemonchosenrarity,raritypercent,pokemonchosen.catchRate),reply_markup=ballchoicekb)
     else:
-        update.message.reply_text('Sorry, but you already spawned a pokemon. Please catch that one before spawning another one.')
+        update.message.reply_text('Sorry, but you already spawned a pokemon. Please catch that one before spawning another one.\n\nIf you want, you can use the /despawn command to depawn all pokemon instead.')
 
 def searchcallback(update, context):
         global pokemonchosen
@@ -126,8 +126,11 @@ def searchcallback(update, context):
             inventory.add_XP(uid,XPreward)
             inventory.add_pokedollars(uid,pokedollarsreward)
             
-            query.edit_message_caption('Nice job! You captured the %s!\n\nYour catchrate: %s%%.\n\nBalls left:\n\nx%s Pokeballs\nx%s Greatballs \nx%s Ultraballs\nx%s Masterballs\n\nYou earned %s XP and %s Pokedollars!'%(
+            query.edit_message_caption('Congratulations, %s!\n You captured the %s with a %s!\n\nYour catchrate: %s%%.\n\nBalls left:\n\nx%s Pokeballs\nx%s Greatballs \nx%s Ultraballs\nx%s Masterballs\n\nYou earned %s XP and %s Pokedollars!'%(
+            
+            query.from_user.id,
             pokemonchosenstr,
+            ballused.capitalize()[:-1],
             catchrate,
             inventory.userinventory[uid]['balls']['pokeballs'],
             inventory.userinventory[uid]['balls']['greatballs'],

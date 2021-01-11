@@ -20,8 +20,8 @@ def travelcallback2(update, context):
     if query.data == 'location:professorshouse':
         if inventory.userinventory[uid]['started'] == False:
             inventory.check_uid
-            query.edit_message_text("Hello %s! I\'m Pokemon professor Maple! heard you wanted to become a pokèmon trainer, so I\'m here to help you! Here is are 6 pokeballs and 10000 pokedollars. Also, you can choose your starter pokemon:"%(query.from_user.first_name),reply_markup=choosestarterkb)
-            inventory.add_pokedollars(uid,10000)
+            query.edit_message_text("Hello %s! I\'m Pokemon professor Maple! heard you wanted to become a pokèmon trainer, so I\'m here to help you! Here is are 6 pokeballs and 500 pokedollars. Also, you can choose your starter pokemon:"%(query.from_user.first_name),reply_markup=choosestarterkb)
+            inventory.add_pokedollars(uid,500)
             inventory.add_balls(uid,'pokeballs',6)
             inventory.userinventory[uid]['started'] = True
             inventory.save()

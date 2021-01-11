@@ -63,7 +63,7 @@ bulbasaur = pokemon('Bulbasaur','https://static.wikia.nocookie.net/pokemon/image
 charmander = pokemon('Charmander','https://static.wikia.nocookie.net/pokemon/images/f/f5/Charmander_XY.gif/revision/latest/scale-to-width-down/48?cb=20150201050431', 
                     ['Fire'], ['Charmander','Charmander','Charizard'], 0, 45,'u',50,75,35,65)  
 
-squirtle = pokemon('Bulbasaur','https://static.wikia.nocookie.net/pokemon/images/4/44/Squirtle_XY_Shiny_Sprite.gif/revision/latest/scale-to-width-down/53?cb=20141031154331', 
+squirtle = pokemon('Squirtle','https://static.wikia.nocookie.net/pokemon/images/4/44/Squirtle_XY_Shiny_Sprite.gif/revision/latest/scale-to-width-down/53?cb=20141031154331', 
                     ['Water'], ['Squirtle','Wartortle','Blastoise'], 0, 45,'u',50,75,35,65)  
 
 
