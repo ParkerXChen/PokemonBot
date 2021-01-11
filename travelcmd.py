@@ -1,5 +1,5 @@
 from telegram.ext import Dispatcher,CommandHandler,CallbackQueryHandler
-import locationslist, inventory
+import locationslist, inventory, pokemons
 from telegram import BotCommand,InlineKeyboardMarkup,InlineKeyboardButton
 
 squritlebutton = InlineKeyboardButton('Squirtle',callback_data='choose:Squirtle')
@@ -32,13 +32,13 @@ def travelcallback1(update, context):
     user = update.effective_user
     query = update.callback_query
     if query.data == 'choose:Squirtle':
-        inventory.add_pokemon(user.id,'Squirtle')
+        inventory.add_pokemon(user.id,pokemons.squirtle)
         query.edit_message_text('Squirtle? Nice choice! He will be with you for the rest of your journey. Good luck!')
     elif query.data == 'choose:Bulbasaur':
-        inventory.add_pokemon(user.id,'Bulbasaur')
+        inventory.add_pokemon(user.id,pokemons.bulbasaur)
         query.edit_message_text('Bulbasaur? Nice choice! He will be with you for the rest of your journey. Good luck!')
     elif query.data == 'choose:Charmander':
-        inventory.add_pokemon(user.id,'Charmander')
+        inventory.add_pokemon(user.id,pokemons.charmander)
         query.edit_message_text('Charmander? Nice choice! He will be with you for the rest of your journey. Good luck!') 
 
 def add_travelcmdhandler(dp:Dispatcher):
