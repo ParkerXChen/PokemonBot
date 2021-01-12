@@ -51,7 +51,7 @@ amaura = pokemon('Amaura','https://www.pkparaiso.com/imagenes/xy/sprites/animado
 ambipom = pokemon('Ambipom','https://professorlotus.com/Sprites/Ambipom.gif', 
                     ['Normal'], ['Aipom','Ambipom'], 1, 30,'r',50,75,75,125)   
 
-amoongus = pokemon('Amoonguss','https://cdn.bulbagarden.net/upload/d/d2/Spr_5b_591.png', 
+amoongus = pokemon('Amoonguss','https://static.wikia.nocookie.net/pokemon/images/d/dd/Amoonguss_XY.gif/revision/latest/scale-to-width-down/78?cb=20140816055327', 
                     ['Grass','Poison'], ['Foongus','Amoongus'], 1, 45,'u',50,125,50,125)  
 
 ampharos = pokemon('Ampharios','hhttps://professorlotus.com/Sprites/Ampharos.gif', 
@@ -120,5 +120,12 @@ pokemons = [
   alomomola,
   altaria,
   amaura,
-  ambipom
+  ambipom,
+  amoongus,
+  ampharos,
+  anorith,
+  araquanid,
+  bulbasaur,
+  charmander,
+  squirtle
 ]

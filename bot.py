@@ -1,7 +1,7 @@
 from telegram.ext import Updater,MessageHandler, Filters,CommandHandler
 from telegram import BotCommand
 import os
-import searchcmd, inventorycmd, codecmd, buddycmd, travelcmd, helpcmd, resetcmd, ballshopcmd, pokemonscmd, despawncmd, crateshopcmd
+import searchcmd, inventorycmd, codecmd, buddycmd, travelcmd, helpcmd, resetcmd, ballshopcmd, pokemonscmd, despawncmd, crateshopcmd, mecmd
 
 def start(update, context):
     update.message.reply_text('Welcome to the Epic Pokemon Game Bot! Use the /help command to see all of my commands!')
@@ -43,5 +43,8 @@ despawncmd.add_despawncmdhandler(dispatcher)
 pokemonscmd.add_pokemonscmdhandler(dispatcher)
 
 crateshopcmd.add_crateshopcmdhandler(dispatcher)
+
+mecmd.add_mecmdhandler(dispatcher)
+
 
 updater.start_polling() 

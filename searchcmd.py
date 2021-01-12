@@ -54,8 +54,6 @@ def choosenewpokemon():
         raritypercent = 0.733
         pokedollarsreward = random.randint(5000,10000)
         XPreward = random.randint(3000,5000)
-    else:
-        pokemonchosen = random.choice(pokemons.pokemons)
     
     pokemonchosenstr = pokemonchosen.name   
 
