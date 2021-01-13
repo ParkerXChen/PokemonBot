@@ -29,19 +29,19 @@ squirtle = pokemon('7','Squirtle','https://professorlotus.com/Sprites/Squirtle.g
 
 wartortle = pokemon('8','Wartortle','https://professorlotus.com/Sprites/Wartortle.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 1, 35, 'r',75,150,75,150)
 
-blastoise = pokemon('9','Blastoise','https://professorlotus.com/Sprites/Blastoise.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 1, 25, 's',75,150,75,150)
+blastoise = pokemon('9','Blastoise','https://professorlotus.com/Sprites/Blastoise.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 2, 25, 's',75,150,75,150)
 
-caterpie = pokemon('10','Caterpie','https://professorlotus.com/Sprites/Caterpie.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 1, 70, 'c',25,50,5,10)
+caterpie = pokemon('10','Caterpie','https://professorlotus.com/Sprites/Caterpie.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 0, 70, 'c',25,50,5,10)
 
-Metapod = pokemon('11','Metapod','https://professorlotus.com/Sprites/Metapod.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 1, 45, 'u',50,100,10,30)
+metapod = pokemon('11','Metapod','https://professorlotus.com/Sprites/Metapod.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 1, 45, 'u',50,100,10,30)
 
-Butterfree = pokemon('12','Butterfree','https://professorlotus.com/Sprites/Butterfree.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 1, 35, 'r',75,150,25,50)
+butterfree = pokemon('12','Butterfree','https://professorlotus.com/Sprites/Butterfree.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 2, 35, 'r',75,150,25,50)
 
-# Weedle = pokemon('13','Weedle','https://professorlotus.com/Sprites/Weedle.gif', [],[], 1, 20, 's',75,150,75,150)
+weedle = pokemon('13','Weedle','https://professorlotus.com/Sprites/Weedle.gif',['Bug'],['Weedle','Kakuna','Beedrill'], 0, 70, 'c',25,50,5,10)
 
-# Kakuna = pokemon('14','Kakuna','https://professorlotus.com/Sprites/Kakuna.gif', [],[], 1, 20, 's',75,150,75,150)
+kakuna = pokemon('14','Kakuna','https://professorlotus.com/Sprites/Kakuna.gif', ['Bug'],['Weedle','Kakuna','Beedrill'], 1, 45, 'u',50,100,10,30)
 
-# Beedrill = pokemon('15','Beedrill','https://professorlotus.com/Sprites/Beedrill.gif', [],[], 1, 20, 's',75,150,75,150)
+beedrill = pokemon('15','Beedrill','https://professorlotus.com/Sprites/Beedrill.gif', ['Bug'],['Weedle','Kakuna','Beedrill'], 2, 35, 'r',75,150,25,50)
 
 # Pidgey = pokemon('16','Pidgey','https://professorlotus.com/Sprites/Pidgey.gif', [],[], 1, 20, 's',75,150,75,150)
 
@@ -1632,19 +1632,41 @@ Butterfree = pokemon('12','Butterfree','https://professorlotus.com/Sprites/Butte
 
 
 commonpokemons = [
+caterpie
 ]
 
 uncommonpokemons = [
+bulbasaur,
+charmander,
+squirtle,
+metapod
 ]
 
 rarepokemons = [
+ivysaur,
+wartortle,
+charmeleon,
+butterfree
 ]
 
 superrarepokemons = [
+venusaur,
+blastoise,
+charizard
 ]
 
 legendarypokemons = [
 ]
 
 pokemons = [
+caterpie,
+bulbasaur,
+charmander,
+squirtle,
+ivysaur,
+wartortle,
+charmeleon,
+venusaur,
+blastoise,
+charizard
 ]
