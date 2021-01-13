@@ -13,29 +13,29 @@ class pokemon:
     self.mindp = mindp
     self.maxdp = maxdp
 
-Bulbasaur = pokemon('1','Bulbasaur','https://professorlotus.com/Sprites/Bulbasaur.gif', ['Grass','Poison'],['Bulbasaur','Ivysaur','Venosaur'], 0, 45, 'u',50,100,10,30)
+bulbasaur = pokemon('1','Bulbasaur','https://professorlotus.com/Sprites/Bulbasaur.gif', ['Grass','Poison'],['Bulbasaur','Ivysaur','Venosaur'], 0, 45, 'u',50,100,10,30)
 
-Ivysaur = pokemon('2','Ivysaur','https://professorlotus.com/Sprites/Ivysaur.gif', ['Grass','Poison'],['Bulbasaur','Ivysaur','Venosaur'], 1, 35, 'r',75,125,25,50)
+ivysaur = pokemon('2','Ivysaur','https://professorlotus.com/Sprites/Ivysaur.gif', ['Grass','Poison'],['Bulbasaur','Ivysaur','Venosaur'], 1, 35, 'r',75,125,25,50)
 
-Venusaur = pokemon('3','Venusaur','https://professorlotus.com/Sprites/Venusaur.gif', ['Grass','Poison'],['Bulbasaur','Ivysaur','Venosaur'], 2, 25, 's',100,150,50,75)
+venusaur = pokemon('3','Venusaur','https://professorlotus.com/Sprites/Venusaur.gif', ['Grass','Poison'],['Bulbasaur','Ivysaur','Venosaur'], 2, 25, 's',100,150,50,75)
 
-Charmander = pokemon('4','Charmander','https://professorlotus.com/Sprites/Charmander.gif', ['Fire'],['Charmander','Charmeleon','Charizard'], 0, 45, 'u',50,100,10,30)
+charmander = pokemon('4','Charmander','https://professorlotus.com/Sprites/Charmander.gif', ['Fire'],['Charmander','Charmeleon','Charizard'], 0, 45, 'u',50,100,10,30)
 
-Charmeleon = pokemon('5','Charmeleon','https://professorlotus.com/Sprites/Charmeleon.gif', ['Fire'],['Charmander','Charmeleon','Charizard'], 1, 35, 'r',75,150,25,50)
+charmeleon = pokemon('5','Charmeleon','https://professorlotus.com/Sprites/Charmeleon.gif', ['Fire'],['Charmander','Charmeleon','Charizard'], 1, 35, 'r',75,150,25,50)
 
-Charizard = pokemon('6','Charizard','https://professorlotus.com/Sprites/Charizard.gif', ['Fire'],['Charmander','Charmeleon','Charizard'], 2, 25, 's',100,175,50,75)
+charizard = pokemon('6','Charizard','https://professorlotus.com/Sprites/Charizard.gif', ['Fire'],['Charmander','Charmeleon','Charizard'], 2, 25, 's',100,175,50,75)
 
-Squirtle = pokemon('7','Squirtle','https://professorlotus.com/Sprites/Squirtle.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 0, 45, 'u',50,100,10,30)
+squirtle = pokemon('7','Squirtle','https://professorlotus.com/Sprites/Squirtle.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 0, 45, 'u',50,100,10,30)
 
-Wartortle = pokemon('8','Wartortle','https://professorlotus.com/Sprites/Wartortle.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 1, 35, 'r',75,150,75,150)
+wartortle = pokemon('8','Wartortle','https://professorlotus.com/Sprites/Wartortle.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 1, 35, 'r',75,150,75,150)
 
-Blastoise = pokemon('9','Blastoise','https://professorlotus.com/Sprites/Blastoise.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 1, 25, 's',75,150,75,150)
+blastoise = pokemon('9','Blastoise','https://professorlotus.com/Sprites/Blastoise.gif', ['Water'],['Squirtle','Wartortle','Blastoise'], 1, 25, 's',75,150,75,150)
 
-# Caterpie = pokemon('10','Caterpie','https://professorlotus.com/Sprites/Caterpie.gif', [],[], 1, 20, 's',75,150,75,150)
+caterpie = pokemon('10','Caterpie','https://professorlotus.com/Sprites/Caterpie.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 1, 70, 'c',25,50,5,10)
 
-# Metapod = pokemon('11','Metapod','https://professorlotus.com/Sprites/Metapod.gif', [],[], 1, 20, 's',75,150,75,150)
+Metapod = pokemon('11','Metapod','https://professorlotus.com/Sprites/Metapod.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 1, 45, 'u',50,100,10,30)
 
-# Butterfree = pokemon('12','Butterfree','https://professorlotus.com/Sprites/Butterfree.gif', [],[], 1, 20, 's',75,150,75,150)
+Butterfree = pokemon('12','Butterfree','https://professorlotus.com/Sprites/Butterfree.gif', ['Bug'],['Caterpie','Metapod','Butterfree'], 1, 35, 'r',75,150,25,50)
 
 # Weedle = pokemon('13','Weedle','https://professorlotus.com/Sprites/Weedle.gif', [],[], 1, 20, 's',75,150,75,150)
 
