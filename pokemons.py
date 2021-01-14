@@ -57,9 +57,9 @@ spearow = pokemon('21','Spearow','https://professorlotus.com/Sprites/Spearow.gif
 
 fearow = pokemon('22','Fearow','https://professorlotus.com/Sprites/Fearow.gif', ['Normal','Flying'],['Spearow','Fearow'], 1, 35, 'r',75,150,25,50)
 
-# Ekans = pokemon('23','Ekans','https://professorlotus.com/Sprites/Ekans.gif', [],[], 1, 20, 's',75,150,75,150)
+ekans = pokemon('23','Ekans','https://professorlotus.com/Sprites/Ekans.gif', ['Poison'],['Ekans','Arbok'], 0, 70, 'c',25,50,5,10)
 
-# Arbok = pokemon('24','Arbok','https://professorlotus.com/Sprites/Arbok.gif', [],[], 1, 20, 's',75,150,75,150)
+arbok = pokemon('24','Arbok','https://professorlotus.com/Sprites/Arbok.gif', ['Poison'],['Ekans','Arbok'], 2, 35, 'r',75,150,25,50)
 
 # Pikachu = pokemon('25','Pikachu','https://professorlotus.com/Sprites/Pikachu.gif', [],[], 1, 20, 's',75,150,75,150)
 
