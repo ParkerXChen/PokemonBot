@@ -53,9 +53,9 @@ rattata = pokemon('19','Rattata','https://professorlotus.com/Sprites/Rattata.gif
 
 raticate = pokemon('20','Raticate','https://professorlotus.com/Sprites/Raticate.gif', ['Normal'],['Rattata','Raticae'], 1, 45, 'u',50,100,10,30)
 
-# Spearow = pokemon('21','Spearow','https://professorlotus.com/Sprites/Spearow.gif', [],[], 1, 20, 's',75,150,75,150)
+spearow = pokemon('21','Spearow','https://professorlotus.com/Sprites/Spearow.gif', ['Normal','Flying'],['Spearow','Fearow'], 0, 70, 'c',25,50,5,10)
 
-# Fearow = pokemon('22','Fearow','https://professorlotus.com/Sprites/Fearow.gif', [],[], 1, 20, 's',75,150,75,150)
+fearow = pokemon('22','Fearow','https://professorlotus.com/Sprites/Fearow.gif', ['Normal','Flying'],['Spearow','Fearow'], 1, 35, 'r',75,150,25,50)
 
 # Ekans = pokemon('23','Ekans','https://professorlotus.com/Sprites/Ekans.gif', [],[], 1, 20, 's',75,150,75,150)
 
