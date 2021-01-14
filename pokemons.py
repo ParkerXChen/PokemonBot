@@ -49,9 +49,9 @@ pidgeotto = pokemon('17','Pidgeotto','https://professorlotus.com/Sprites/Pidgeot
 
 pidgeot = pokemon('18','Pidgeot','https://professorlotus.com/Sprites/Pidgeot.gif', ['Normal','Flying'],['Pidgey','Pidgetto','Pidgeot'], 2, 35, 'r',75,150,25,50)
 
-rattata = pokemon('19','Rattata','https://professorlotus.com/Sprites/Rattata.gif', ['Normal'],['Rattata','Raticae'], 0, 70, 'c',25,50,5,10)
+rattata = pokemon('19','Rattata','https://professorlotus.com/Sprites/Rattata.gif', ['Normal'],['Rattata','Raticate'], 0, 70, 'c',25,50,5,10)
 
-raticate = pokemon('20','Raticate','https://professorlotus.com/Sprites/Raticate.gif', ['Normal'],['Rattata','Raticae'], 1, 45, 'u',50,100,10,30)
+raticate = pokemon('20','Raticate','https://professorlotus.com/Sprites/Raticate.gif', ['Normal'],['Rattata','Ratictae'], 1, 45, 'u',50,100,10,30)
 
 spearow = pokemon('21','Spearow','https://professorlotus.com/Sprites/Spearow.gif', ['Normal','Flying'],['Spearow','Fearow'], 0, 70, 'c',25,50,5,10)
 
@@ -1632,21 +1632,32 @@ arbok = pokemon('24','Arbok','https://professorlotus.com/Sprites/Arbok.gif', ['P
 
 
 commonpokemons = [
-caterpie
+caterpie,
+weedle,
+pidgey,
+ekans,
+pidgey,
+rattata,
+spearow
 ]
 
 uncommonpokemons = [
 bulbasaur,
 charmander,
 squirtle,
-metapod
+metapod,
+kakuna,
+pidgeot,
+raticate
 ]
 
 rarepokemons = [
 ivysaur,
 wartortle,
 charmeleon,
-butterfree
+butterfree,
+beedrill,
+fearow
 ]
 
 superrarepokemons = [
@@ -1660,12 +1671,25 @@ legendarypokemons = [
 
 pokemons = [
 caterpie,
+weedle,
+pidgey,
+ekans,
+pidgey,
+rattata,
+spearow,
 bulbasaur,
 charmander,
 squirtle,
+metapod,
+kakuna,
+pidgeot,
+raticate,
 ivysaur,
 wartortle,
 charmeleon,
+butterfree,
+beedrill,
+fearow,
 venusaur,
 blastoise,
 charizard
