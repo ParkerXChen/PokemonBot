@@ -43,15 +43,15 @@ kakuna = pokemon('14','Kakuna','https://professorlotus.com/Sprites/Kakuna.gif', 
 
 beedrill = pokemon('15','Beedrill','https://professorlotus.com/Sprites/Beedrill.gif', ['Bug'],['Weedle','Kakuna','Beedrill'], 2, 35, 'r',75,150,25,50)
 
-# Pidgey = pokemon('16','Pidgey','https://professorlotus.com/Sprites/Pidgey.gif', [],[], 1, 20, 's',75,150,75,150)
+pidgey = pokemon('16','Pidgey','https://professorlotus.com/Sprites/Pidgey.gif', ['Normal','Flying'],['Pidgey','Pidgetto','Pidgeot'], 0, 70, 'c',25,50,5,10)
 
-# Pidgeotto = pokemon('17','Pidgeotto','https://professorlotus.com/Sprites/Pidgeotto.gif', [],[], 1, 20, 's',75,150,75,150)
+pidgeotto = pokemon('17','Pidgeotto','https://professorlotus.com/Sprites/Pidgeotto.gif', ['Normal','Flying'],['Pidgey','Pidgetto','Pidgeot'], 1, 45, 'u',50,100,10,30)
 
-# Pidgeot = pokemon('18','Pidgeot','https://professorlotus.com/Sprites/Pidgeot.gif', [],[], 1, 20, 's',75,150,75,150)
+pidgeot = pokemon('18','Pidgeot','https://professorlotus.com/Sprites/Pidgeot.gif', ['Normal','Flying'],['Pidgey','Pidgetto','Pidgeot'], 2, 35, 'r',75,150,25,50)
 
-# Rattata = pokemon('19','Rattata','https://professorlotus.com/Sprites/Rattata.gif', [],[], 1, 20, 's',75,150,75,150)
+rattata = pokemon('19','Rattata','https://professorlotus.com/Sprites/Rattata.gif', ['Normal'],['Rattata','Raticae'], 0, 70, 'c',25,50,5,10)
 
-# Raticate = pokemon('20','Raticate','https://professorlotus.com/Sprites/Raticate.gif', [],[], 1, 20, 's',75,150,75,150)
+raticate = pokemon('20','Raticate','https://professorlotus.com/Sprites/Raticate.gif', ['Normal'],['Rattata','Raticae'], 1, 45, 'u',50,100,10,30)
 
 # Spearow = pokemon('21','Spearow','https://professorlotus.com/Sprites/Spearow.gif', [],[], 1, 20, 's',75,150,75,150)
 

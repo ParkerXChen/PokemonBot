@@ -23,7 +23,8 @@ def check_uid(uid):
             "pokedollars": 0,
             "codesredeemed": [],
             "started": False,
-            "Spawnedpokemon": False
+            "Spawnedpokemon": False,
+            "pokemonsdict":{}
         }
     save()
 
@@ -91,4 +92,5 @@ def reset(uid):
     userinventory[uid]['level'] = 0
     userinventory[uid]['XP'] = 0
     userinventory[uid]['started'] = False
+    userinventory[uid]['pokemonsdict'] = {}
     save()
