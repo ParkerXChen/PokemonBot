@@ -1,5 +1,5 @@
 import config
-import random
+import random, datetime
 
 userinventory = config.CONFIG['userinventory']
 nextlevel = 0
@@ -9,9 +9,11 @@ def save():
 
 def check_uid(uid):
     if not uid in userinventory:
+        x = datetime.datetime.now()
         userinventory[uid] = {
             "level": 0,
             "XP": 0,
+            "datejoined":f'{(x.strftime("%Y"))}-{(x.strftime("%m"))}-{(x.strftime("%d"))}',
             "balls": {
                 "pokeballs": 0,
                 "greatballs": 0,
@@ -27,6 +29,9 @@ def check_uid(uid):
             "pokemonsdict":{}
         }
     save()
+
+def add_level(uid):
+    userinventory[uid]['level'] += 1
 
 
 def set_buddy(uid,buddy):

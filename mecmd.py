@@ -6,10 +6,12 @@ import inventory, pokemons
 
 def me(update, context):
     uid = str(update.message.from_user.id)
-
-    update.message.reply_text('Trainer %s\n\nPokedollars: %s'%(
+    inventory.check_uid(uid)
+    update.message.reply_text('Trainer %s\nJoined %s\n\nLevel: %s\nXP:%s'%(
         update.message.from_user.first_name,
-        inventory.userinventory[uid]['pokedollars']
+        inventory.userinventory[uid]['datejoined'],
+        inventory.userinventory[uid]['pokedollars'],
+        inventory.userinventory[uid]['XP']
     ))
 
 def add_mecmdhandler(dp:Dispatcher):

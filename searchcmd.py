@@ -1,7 +1,7 @@
 from telegram.ext import Dispatcher,CommandHandler,CallbackQueryHandler
 from telegram import InlineKeyboardMarkup,InlineKeyboardButton,BotCommand,InputMediaAnimation
 import random
-import inventory, pokemons
+import inventory, pokemons, lvlsystem
 import time
 
 pokeballbutton = InlineKeyboardButton('Pokeball',callback_data='ballchoice:pokeball')
@@ -140,6 +140,10 @@ def searchcallback(update, context):
             ))
             choosenewpokemon()
             inventory.set_nospawnedpokemon(uid)
+            if lvlsystem.check_if_lvl_up(uid) == 'yes':
+                time.sleep(5)
+                inventory.add_level(uid)
+                query.edit_message_caption('Congratulations! You leveled up!\n\nYou are now level %s!'%(inventory.userinventory[uid]['level']))
         else:
             # b = InputMediaAnimation(media=open('/Users/Parker/work/PokemonBot/PokeballFail.gif'))
             b = InputMediaAnimation(media='https://i.imgur.com/RV6jD6c.gif')
