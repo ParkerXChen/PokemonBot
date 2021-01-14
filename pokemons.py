@@ -61,9 +61,9 @@ ekans = pokemon('23','Ekans','https://professorlotus.com/Sprites/Ekans.gif', ['P
 
 arbok = pokemon('24','Arbok','https://professorlotus.com/Sprites/Arbok.gif', ['Poison'],['Ekans','Arbok'], 2, 35, 'r',75,150,25,50)
 
-# Pikachu = pokemon('25','Pikachu','https://professorlotus.com/Sprites/Pikachu.gif', [],[], 1, 20, 's',75,150,75,150)
+pikachu = pokemon('25','Pikachu','https://professorlotus.com/Sprites/Pikachu.gif', ['Electric'],['Pichu','Pikachu','Raichu'], 1, 45, 'u',50,100,10,30)
 
-# Raichu = pokemon('26','Raichu','https://professorlotus.com/Sprites/Raichu.gif', [],[], 1, 20, 's',75,150,75,150)
+raichu = pokemon('26','Raichu','https://professorlotus.com/Sprites/Raichu.gif', ['Electric'],['Pichu','Pikachu','Raichu'], 3, 35, 'r',75,150,25,50)
 
 # Sandshrew = pokemon('27','Sandshrew','https://professorlotus.com/Sprites/Sandshrew.gif', [],[], 1, 20, 's',75,150,75,150)
 
@@ -1648,7 +1648,8 @@ squirtle,
 metapod,
 kakuna,
 pidgeot,
-raticate
+raticate,
+pikachu
 ]
 
 rarepokemons = [
@@ -1657,7 +1658,8 @@ wartortle,
 charmeleon,
 butterfree,
 beedrill,
-fearow
+fearow,
+raichu
 ]
 
 superrarepokemons = [
