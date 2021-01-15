@@ -22,7 +22,7 @@ def crateshopcallback(update, context):
     print (uid)
     if query.data == 'buycrate:poke':
         if not inventory.userinventory[uid]['pokedollars'] < 500:
-            pokeballsnum = random.randint(5,15)
+            pokeballsnum = random.randint(3,8)
             greatballsnum = random.randint(1,5)
             query.message.edit_text('You purchased a Poke Crate! Inside were:\n\nx%s Pokeballs\nx%s Greatballs'%(pokeballsnum,greatballsnum))
             inventory.add_pokedollars(uid,-500)
