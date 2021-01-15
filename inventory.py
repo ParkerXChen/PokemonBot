@@ -26,7 +26,8 @@ def check_uid(uid):
             "codesredeemed": [],
             "started": False,
             "Spawnedpokemon": False,
-            "pokemonsdict":{}
+            "pokemonsdict":{},
+            "pokemonslist":''
         }
     save()
 

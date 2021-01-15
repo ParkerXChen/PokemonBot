@@ -3,7 +3,6 @@ import inventory, pokemons
 
 def boxcmd(update, context):
     uid = str(update.message.from_user.id)
-    pokemonslist = ''
     inventory.check_uid(uid)
     for i in pokemons.pokemons:
         for j in inventory.userinventory[uid]['pokemons']:
@@ -13,9 +12,12 @@ def boxcmd(update, context):
                 else:
                     inventory.userinventory[uid]['pokemonsdict'][j['name']] += 1
 
-    pokemonslist = pokemonslist[:-1]
-    update.message.reply_text(f'Your box is: \n\n{inventory.userinventory[uid]["pokemonsdict"]}')
+    for i in inventory.userinventory[uid]['pokemonsdict'].keys():
+        inventory.userinventory[uid]['pokemonslist'] += f"{i} x{inventory.userinventory[uid]['pokemonsdict'][i]} \n"
+
+    update.message.reply_text(f'{update.message.from_user.first_name}\'s box: \n\n{inventory.userinventory[uid]["pokemonslist"]}')
     inventory.userinventory[uid]['pokemonsdict'] = {}
+    inventory.userinventory[uid]['pokemonslist'] = ''
 
 def add_boxcmdhandler(dp:Dispatcher):
     dp.add_handler(CommandHandler('box', boxcmd))
