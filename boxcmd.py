@@ -16,6 +16,7 @@ def boxcmd(update, context):
 
     pokemonslist = pokemonslist[:-1]
     update.message.reply_text(f'Your box is: \n\n{inventory.userinventory[uid]["pokemonsdict"]}')
+    inventory.userinventory[uid]['pokemonsdict'] = {}
 
 def add_boxcmdhandler(dp:Dispatcher):
     dp.add_handler(CommandHandler('box', boxcmd))
