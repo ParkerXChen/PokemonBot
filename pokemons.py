@@ -65,9 +65,9 @@ pikachu = pokemon('25','Pikachu','https://professorlotus.com/Sprites/Pikachu.gif
 
 raichu = pokemon('26','Raichu','https://professorlotus.com/Sprites/Raichu.gif', ['Electric'],['Pichu','Pikachu','Raichu'], 3, 35, 'r',75,150,25,50)
 
-# Sandshrew = pokemon('27','Sandshrew','https://professorlotus.com/Sprites/Sandshrew.gif', [],[], 1, 20, 's',75,150,75,150)
+sandshrew = pokemon('27','Sandshrew','https://professorlotus.com/Sprites/Sandshrew.gif', ['Ground'],['Sandshrew','Sandslash'], 0, 45, 'u',50,100,10,30)
 
-# Sandslash = pokemon('28','Sandslash','https://professorlotus.com/Sprites/Sandslash.gif', [],[], 1, 20, 's',75,150,75,150)
+sandslash = pokemon('28','Sandslash','https://professorlotus.com/Sprites/Sandslash.gif', ['Ground'],['Sandshrew','Sandslash'], 1, 35, 'r',75,150,25,50)
 
 # Nidoran♀ = pokemon('29','Nidoran♀','https://professorlotus.com/Sprites/Nidoran♀.gif', [],[], 1, 20, 's',75,150,75,150)
 
