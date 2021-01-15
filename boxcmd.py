@@ -7,7 +7,6 @@ def boxcmd(update, context):
     inventory.check_uid(uid)
     for i in pokemons.pokemons:
         for j in inventory.userinventory[uid]['pokemons']:
-            print(j['name'])
             if j['name'] == i.name:  
                 if not j['name'] in inventory.userinventory[uid]['pokemonsdict']:
                     inventory.userinventory[uid]['pokemonsdict'][j['name']] = 1
