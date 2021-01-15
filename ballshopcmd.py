@@ -7,7 +7,7 @@ buy25pokeballsbutton = InlineKeyboardButton('50 Pokeballs (x1 Capture Rate) (200
 buy10greatballsbutton = InlineKeyboardButton('10 Greatballs (x1.5 Capture Rate) (1250 Pokedollars)',callback_data='buyballs:tgreatballs')
 buy25greatballsbutton = InlineKeyboardButton('25 Greatballs (x1.5 Capture Rate) (3000 Pokedollars)',callback_data='buyballs:tfgreatballs')
 buy10ultraballsbutton = InlineKeyboardButton('5 Ultraballs (x2 Capture Rate) (2000 Pokedollars)',callback_data='buyballs:fultraballs')
-buy25ultraballsbutton = InlineKeyboardButton('15 Ultraballs (x2 Capture Rate) (1000 Pokedollars)',callback_data='buyballs:fteultraballs')
+buy25ultraballsbutton = InlineKeyboardButton('15 Ultraballs (x2 Capture Rate) (10000 Pokedollars)',callback_data='buyballs:fteultraballs')
 buy10masterballsbutton = InlineKeyboardButton('1 Masterball (x255 Capture Rate) (10000 Pokedollars)',callback_data='buyballs:omasterballs')
 buy25masterballsbutton = InlineKeyboardButton('5 Masterballs (x255 Capture Rate) (45000 Pokedollars)',callback_data='buyballs:fmasterballs')
 
