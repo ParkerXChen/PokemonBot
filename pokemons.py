@@ -59,7 +59,7 @@ fearow = pokemon('22','Fearow','https://professorlotus.com/Sprites/Fearow.gif', 
 
 ekans = pokemon('23','Ekans','https://professorlotus.com/Sprites/Ekans.gif', ['Poison'],['Ekans','Arbok'], 0, 70, 'c',25,50,5,10)
 
-arbok = pokemon('24','Arbok','https://professorlotus.com/Sprites/Arbok.gif', ['Poison'],['Ekans','Arbok'], 2, 35, 'r',75,150,25,50)
+arbok = pokemon('24','Arbok','https://professorlotus.com/Sprites/Arbok.gif', ['Poison'],['Ekans','Arbok'], 1, 35, 'r',75,150,25,50)
 
 pikachu = pokemon('25','Pikachu','https://professorlotus.com/Sprites/Pikachu.gif', ['Electric'],['Pichu','Pikachu','Raichu'], 1, 45, 'u',50,100,10,30)
 
@@ -69,11 +69,11 @@ sandshrew = pokemon('27','Sandshrew','https://professorlotus.com/Sprites/Sandshr
 
 sandslash = pokemon('28','Sandslash','https://professorlotus.com/Sprites/Sandslash.gif', ['Ground'],['Sandshrew','Sandslash'], 1, 35, 'r',75,150,25,50)
 
-# Nidoran♀ = pokemon('29','Nidoran♀','https://professorlotus.com/Sprites/Nidoran♀.gif', [],[], 1, 20, 's',75,150,75,150)
+nidoran_F = pokemon('29','Nidoran♀','https://professorlotus.com/Sprites/Nidoran_F.gif', ['Poison'],['Nidoran♀','Nidorino','Nidoqueen'], 0, 70, 'c',25,50,5,10)
 
-# Nidorina = pokemon('30','Nidorina','https://professorlotus.com/Sprites/Nidorina.gif', [],[], 1, 20, 's',75,150,75,150)
+nidorina = pokemon('30','Nidorina','https://professorlotus.com/Sprites/Nidorina.gif', ['Poison'],['Nidoran♀','Nidorino','Nidoqueen'], 1, 45, 'u',50,100,10,30)
 
-# Nidoqueen = pokemon('31','Nidoqueen','https://professorlotus.com/Sprites/Nidoqueen.gif', [],[], 1, 20, 's',75,150,75,150)
+nidoqueen = pokemon('31','Nidoqueen','https://professorlotus.com/Sprites/Nidoqueen.gif', ['Poison'],['Nidoran♀','Nidorino','Nidoqueen'], 1, 35, 'r',75,150,25,50)
 
 # Nidoran♂ = pokemon('32','Nidoran♂','https://professorlotus.com/Sprites/Nidoran♂.gif', [],[], 1, 20, 's',75,150,75,150)
 
@@ -1638,7 +1638,8 @@ pidgey,
 ekans,
 pidgey,
 rattata,
-spearow
+spearow,
+nidoran_F
 ]
 
 uncommonpokemons = [
@@ -1649,7 +1650,8 @@ metapod,
 kakuna,
 pidgeot,
 raticate,
-pikachu
+pikachu,
+nidorina
 ]
 
 rarepokemons = [
@@ -1659,7 +1661,8 @@ charmeleon,
 butterfree,
 beedrill,
 fearow,
-raichu
+raichu,
+nidoqueen
 ]
 
 superrarepokemons = [
@@ -1679,6 +1682,7 @@ ekans,
 pidgey,
 rattata,
 spearow,
+nidoran_F,
 bulbasaur,
 charmander,
 squirtle,
@@ -1686,6 +1690,7 @@ metapod,
 kakuna,
 pidgeot,
 raticate,
+nidorina,
 ivysaur,
 wartortle,
 charmeleon,
@@ -1694,5 +1699,6 @@ beedrill,
 fearow,
 venusaur,
 blastoise,
-charizard
+charizard,
+nidoqueen
 ]
