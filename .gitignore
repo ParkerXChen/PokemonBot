@@ -2,4 +2,5 @@ TOKEN
 playerinfo.json
 To do list:
 codelist.py
+.DS_Store
 __pycache__
