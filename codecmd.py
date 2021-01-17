@@ -19,7 +19,7 @@ def code(update, context):
         else: 
             update.message.reply_text('Sorry, you already redeemed that code!')
     else:
-            update.message.reply_text('Enter the /code command followed by a code you got from the official bot channel (https://t.me/PokemonEpicGameBotCh) to get free rewards!\n\nThe codes you have redeemed are: %s'%(inventory.userinventory['codesredeemed']))
+            update.message.reply_text('Enter the /code command followed by a code you got from the official bot channel (https://t.me/PokemonEpicGameBotCh) to get free rewards!\n\nThe codes you have redeemed are: %s'%(inventory.userinventory[uid]['codesredeemed']))
 
 def add_codecmdhandler(dp:Dispatcher):
     dp.add_handler(CommandHandler('code', code)) 
