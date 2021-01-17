@@ -27,7 +27,8 @@ def check_uid(uid):
             "started": False,
             "Spawnedpokemon": False,
             "pokemonsdict":{},
-            "pokemonslist":''
+            "pokemonslist":'',
+            "lastuniqueid":0
         }
     save()
 
@@ -65,7 +66,8 @@ def add_pokemon(uid,pokemon):
     health = random.randint(pokemon.minhp,pokemon.maxhp)
     damage = random.randint(pokemon.mindp,pokemon.maxdp)
     power = round(health*damage/3)
-    statsdict = {'name':pokemon.name,'health':health,'damage':damage,'power':power}
+    statsdict = {'uniqueid':userinventory[uid]["lastuniqueid"]+1,'name':pokemon.name,'health':health,'damage':damage,'power':power}
+    userinventory[uid]["lastuniqueid"] += 1
     userinventory[uid]['pokemons'].append(statsdict)
     save()
 
