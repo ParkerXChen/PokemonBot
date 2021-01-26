@@ -1,5 +1,5 @@
 from telegram.ext import Dispatcher,CommandHandler,CallbackQueryHandler
-from telegram import InlineKeyboardMarkup,InlineKeyboardButton,BotCommand,InputMediaAnimation
+from telegram import InlineKeyboardMarkup,InlineKeyboardButton,InputMediaAnimation
 import random
 import inventory, pokemons, lvlsystem
 import time
@@ -64,7 +64,7 @@ def search(update, context):
     choosenewpokemon()
     balls = []
     uid = str(update.message.from_user.id)
-    inventory.check_uid(uid)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
 
     if not inventory.userinventory[uid]['Spawnedpokemon'] == True:
         realinventory = inventory.userinventory[uid]
@@ -89,7 +89,7 @@ def searchcallback(update, context):
         global pokemonchosenstr
         query = update.callback_query     
         uid = str(query.from_user.id)
-        inventory.check_uid(uid)    
+        inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)   
         number = random.randint(1,100)    
         catchrate = pokemonchosen.catchRate
         ballused = ''
@@ -135,6 +135,7 @@ def searchcallback(update, context):
             XPreward,
             pokedollarsreward
             ))
+
             choosenewpokemon()
             inventory.set_nospawnedpokemon(uid)
             if lvlsystem.check_if_lvl_up(uid) == 'yes':

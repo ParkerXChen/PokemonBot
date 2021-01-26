@@ -7,10 +7,12 @@ def save():
     config.CONFIG["userinventory"] = userinventory
     config.save_config()
 
-def check_uid(uid):
+def check_uid(uid,name,username):
     if not uid in userinventory:
         x = datetime.datetime.now()
         userinventory[uid] = {
+            'name':name,
+            'username':username,
             "level": 0,
             "XP": 0,
             "datejoined":f'{(x.strftime("%Y"))}-{(x.strftime("%m"))}-{(x.strftime("%d"))}',

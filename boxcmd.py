@@ -3,7 +3,7 @@ import inventory, pokemons
 
 def boxcmd(update, context):
     uid = str(update.message.from_user.id)
-    inventory.check_uid(uid)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
     for i in pokemons.pokemons:
         for j in inventory.userinventory[uid]['pokemons']:
             if j['name'] == i.name:  

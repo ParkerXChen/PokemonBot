@@ -12,13 +12,13 @@ buycrateskb = InlineKeyboardMarkup([[buycommoncratebutton],[buyuncommoncratebutt
 
 def crateshop(update, context):
     uid = str(update.message.from_user.id)
-    inventory.check_uid(uid)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
     update.message.reply_text(f"Hello {update.message.from_user.first_name}! Welcome to the Crate Shop! Here you can buy crates, that contain things for your adventure!  \n\nYou have {inventory.userinventory[uid]['pokedollars']} pokedollars.\n\nClick on an item to buy it.",reply_markup=buycrateskb)
 
 def crateshopcallback(update, context):
     query = update.callback_query
     uid = str(query.from_user.id)
-    inventory.check_uid(uid)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
     print (uid)
     if query.data == 'buycrate:poke':
         if not inventory.userinventory[uid]['pokedollars'] < 500:

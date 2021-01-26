@@ -4,6 +4,7 @@ import inventory
 
 def despawn(update, context):
     uid = str(update.message.from_user.id)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
     inventory.userinventory[uid]['Spawnedpokemon'] = False
     update.message.reply_text('You have despawned all pokemon.')
 

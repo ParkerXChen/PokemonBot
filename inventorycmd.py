@@ -3,7 +3,7 @@ import inventory
 
 def inventorycmd(update, context):
     uid = str(update.effective_user.id)
-    inventory.check_uid(uid)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
     pokemonslist = ''
     pokemonslist += 'Your pokemon are:'
 

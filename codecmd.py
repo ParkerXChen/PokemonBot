@@ -5,6 +5,7 @@ import inventory
 
 def code(update, context):
     uid = str(update.message.from_user.id)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
     if not len(context.args) == 0:
         if not '%s'%(context.args[0]) in inventory.userinventory[uid]['codesredeemed']:
             if context.args[0] in codelist.codes:

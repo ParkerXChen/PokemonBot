@@ -1,5 +1,5 @@
 from telegram.ext import Dispatcher,CommandHandler,CallbackQueryHandler
-import locationslist, inventory, pokemons
+import inventory, pokemons
 from telegram import BotCommand,InlineKeyboardMarkup,InlineKeyboardButton
 
 squritlebutton = InlineKeyboardButton('Squirtle',callback_data='choose:Squirtle')
@@ -28,7 +28,7 @@ def travel(update, context):
 def travelcallback(update, context):
     query = update.callback_query
     uid = str(query.from_user.id)
-    inventory.check_uid(uid)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
     if query.data == 'location:professorshouse':
         if inventory.userinventory[uid]['started'] == False:
             inventory.check_uid

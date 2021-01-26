@@ -13,10 +13,11 @@ def resetcallback(update, context):
     query = update.callback_query
     if query.data == 'YorN1:yes':
         uid = str(query.from_user.id)
+        inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
         msg = 'Your game has been reset.'
         inventory.reset(uid)
     else:
-        msg = 'No? OK.'
+        msg = 'You have cancelled the reset.'
     query.edit_message_text(msg)
 
 def add_resetcmdhandler(dp:Dispatcher):

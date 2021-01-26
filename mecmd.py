@@ -6,7 +6,7 @@ import inventory, pokemons
 
 def me(update, context):
     uid = str(update.message.from_user.id)
-    inventory.check_uid(uid)
+    inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)
     update.message.reply_text(f'Trainer {update.message.from_user.first_name}\nJoined on {inventory.userinventory[uid]["datejoined"]}\n\nLevel: {inventory.userinventory[uid]["level"]}\n{inventory.userinventory[uid]["XP"]}/{(inventory.userinventory[uid]["level"]+1)*1000} XP to level up\nXP To next level: {(inventory.userinventory[uid]["level"]+1)*1000-inventory.userinventory[uid]["XP"]}')
 
 def add_mecmdhandler(dp:Dispatcher):
