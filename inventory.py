@@ -30,7 +30,8 @@ def check_uid(uid,name,username):
             "Spawnedpokemon": False,
             "pokemonsdict":{},
             "pokemonslist":'',
-            "lastuniqueid":0
+            "lastuniqueid":0,
+            "quests":{}
         }
     save()
 
