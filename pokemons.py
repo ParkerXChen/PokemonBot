@@ -73,13 +73,13 @@ nidoran_F = pokemon('29','Nidoran♀','https://professorlotus.com/Sprites/Nidora
 
 nidorina = pokemon('30','Nidorina','https://professorlotus.com/Sprites/Nidorina.gif', ['Poison'],['Nidoran♀','Nidorino','Nidoqueen'], 1, 45, 'u',50,100,10,30)
 
-nidoqueen = pokemon('31','Nidoqueen','https://professorlotus.com/Sprites/Nidoqueen.gif', ['Poison'],['Nidoran♀','Nidorino','Nidoqueen'], 1, 35, 'r',75,150,25,50)
+nidoqueen = pokemon('31','Nidoqueen','https://professorlotus.com/Sprites/Nidoqueen.gif', ['Poison'],['Nidoran♀','Nidorino','Nidoqueen'], 2, 35, 'r',75,150,25,50)
 
-# Nidoran♂ = pokemon('32','Nidoran♂','https://professorlotus.com/Sprites/Nidoran♂.gif', [],[], 1, 20, 's',75,150,75,150)
+nidoran_M = pokemon('32','Nidoran♂','https://professorlotus.com/Sprites/Nidoran♂.gif', ['Poison'],['Nidoran♂','Nidorino','Nidorino'], 0, 70, 'c',25,50,5,10)
 
-# Nidorino = pokemon('33','Nidorino','https://professorlotus.com/Sprites/Nidorino.gif', [],[], 1, 20, 's',75,150,75,150)
+nidorino = pokemon('33','Nidorino','https://professorlotus.com/Sprites/Nidorino.gif', ['Poison'],['Nidoran♂','Nidorino','Nidorino'], 1, 45, 'u',50,100,10,30)
 
-# Nidoking = pokemon('34','Nidoking','https://professorlotus.com/Sprites/Nidoking.gif', [],[], 1, 20, 's',75,150,75,150)
+nidoking = pokemon('34','Nidoking','https://professorlotus.com/Sprites/Nidoking.gif', ['Poison'],['Nidoran♂','Nidorino','Nidorino'], 2, 35, 'r',75,150,25,50)
 
 # Clefairy = pokemon('35','Clefairy','https://professorlotus.com/Sprites/Clefairy.gif', [],[], 1, 20, 's',75,150,75,150)
 
