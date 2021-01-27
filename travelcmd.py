@@ -16,8 +16,6 @@ townspeople = [nursejoy]
 nursejoybutton = InlineKeyboardButton('Nurse Joy',callback_data='townsperson:nursejoy')
 townspeoplekb = InlineKeyboardMarkup([[nursejoybutton]])
 
-
-
 buy10pokeballsbutton = InlineKeyboardButton('25 Pokeballs (x1 Capture Rate) (1250 pokecoins)',callback_data='buyballs:tfpokeballs')
 buy25pokeballsbutton = InlineKeyboardButton('50 Pokeballs (x1 Capture Rate) (2000 pokecoins)',callback_data='buyballs:ftypokeballs')
 buy10greatballsbutton = InlineKeyboardButton('10 Greatballs (x1.5 Capture Rate) (1250 pokecoins)',callback_data='buyballs:tgreatballs')
@@ -151,7 +149,7 @@ def townspersoncallback(update,context):
             personchosesn = i
 
     a = InputMediaAnimation(media=personchosesn.giflink)
-    query.edit_message_media(a)
+    query.edit_message_media(a)                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
     query.edit_message_caption(personchosesn.dialouge)
     
