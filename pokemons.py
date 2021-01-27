@@ -81,11 +81,11 @@ nidorino = pokemon('33','Nidorino','https://professorlotus.com/Sprites/Nidorino.
 
 nidoking = pokemon('34','Nidoking','https://professorlotus.com/Sprites/Nidoking.gif', ['Poison'],['Nidoran♂','Nidorino','Nidorino'], 2, 35, 'r',75,150,25,50)
 
-# Clefairy = pokemon('35','Clefairy','https://professorlotus.com/Sprites/Clefairy.gif', [],[], 1, 20, 's',75,150,75,150)
+clefairy = pokemon('35','Clefairy','https://professorlotus.com/Sprites/Clefairy.gif', ['Fairy'],['Clefairy','Clefable'], 0, 45, 'u',50,100,10,30)
 
-# Clefable = pokemon('36','Clefable','https://professorlotus.com/Sprites/Clefable.gif', [],[], 1, 20, 's',75,150,75,150)
+clefable = pokemon('36','Clefable','https://professorlotus.com/Sprites/Clefable.gif', ['Fairy'],['Clefairy','Clefable'], 1, 35, 'r',75,150,25,50)
 
-# Vulpix = pokemon('37','Vulpix','https://professorlotus.com/Sprites/Vulpix.gif', [],[], 1, 20, 's',75,150,75,150)
+vulpix = pokemon('37','Vulpix','https://professorlotus.com/Sprites/Vulpix.gif', ['Fire'],['Vulpix','Ninetails'], 0, 70, 'c',25,50,5,10)
 
 # Ninetales = pokemon('38','Ninetales','https://professorlotus.com/Sprites/Ninetales.gif', [],[], 1, 20, 's',75,150,75,150)
 
@@ -1642,7 +1642,8 @@ ekans,
 pidgey,
 rattata,
 spearow,
-nidoran_F
+nidoran_F,
+nidoran_M
 ]
 
 uncommonpokemons = [
@@ -1654,7 +1655,8 @@ kakuna,
 pidgeot,
 raticate,
 pikachu,
-nidorina
+nidorina,
+nidorino
 ]
 
 rarepokemons = [
@@ -1665,7 +1667,8 @@ butterfree,
 beedrill,
 fearow,
 raichu,
-nidoqueen
+nidoqueen,
+nidoking
 ]
 
 superrarepokemons = [
@@ -1703,5 +1706,8 @@ fearow,
 venusaur,
 blastoise,
 charizard,
-nidoqueen
+nidoqueen,
+nidoran_M,
+nidorino,
+nidoking
 ]

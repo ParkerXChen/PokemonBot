@@ -80,7 +80,7 @@ def search(update, context):
 
         ballchoicekb = InlineKeyboardMarkup([balls])
         inventory.set_yesspawnedpokemon(uid)
-        update.message.reply_animation(pokemonchosen.spriitelink,caption='A wild %s appeared! \n\nRarity: %s (%s%%). \nBase catchrate: %s\n\nWhat ball do you want to use on it?'%(pokemonchosenstr,pokemonchosenrarity,raritypercent,pokemonchosen.catchRate),reply_markup=ballchoicekb)
+        update.message.reply_animation(pokemonchosen.spritelink,caption='A wild %s appeared! \n\nRarity: %s (%s%%). \nBase catchrate: %s\n\nWhat ball do you want to use on it?'%(pokemonchosenstr,pokemonchosenrarity,raritypercent,pokemonchosen.catchRate),reply_markup=ballchoicekb)
     else:
         update.message.reply_text('Sorry, but you already spawned a pokemon. Please catch that one before spawning another one.\n\nIf you want, you can use the /despawn command to depawn all pokemon instead.')
 
@@ -89,7 +89,7 @@ def searchcallback(update, context):
         global pokemonchosenstr
         query = update.callback_query     
         uid = str(query.from_user.id)
-        inventory.check_uid(uid,update.message.from_user.first_name,update.message.from_user.username)   
+        inventory.check_uid(uid,query.message.from_user.first_name,query.message.from_user.username)   
         number = random.randint(1,100)    
         catchrate = pokemonchosen.catchRate
         ballused = ''
