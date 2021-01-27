@@ -1,8 +1,8 @@
 class pokemon:
-  def __init__(self, number, name, giflink, Type, EvolutionLine, EvolutionLevel, CatchRate, Rarity,minhp, maxhp, mindp, maxdp):
+  def __init__(self, number, name, spritelink, Type, EvolutionLine, EvolutionLevel, CatchRate, Rarity,minhp, maxhp, mindp, maxdp):
     self.number = number
     self.name = name
-    self.giflink = giflink
+    self.spritelink = spritelink
     self.type = Type
     self.evolutionline = EvolutionLine
     self.EvolutionLevel = EvolutionLevel
@@ -994,6 +994,9 @@ nidoqueen = pokemon('31','Nidoqueen','https://professorlotus.com/Sprites/Nidoque
 # Manaphy = pokemon('490','Manaphy','https://professorlotus.com/Sprites/Manaphy.gif', [],[], 1, 20, 's',75,150,75,150)
 
 # Darkrai = pokemon('491','Darkrai','https://professorlotus.com/Sprites/Darkrai.gif', [],[], 1, 20, 's',75,150,75,150)
+
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#LAST ONE WITH A GIF!!!!!!!!!!!!!!!!!
 
 # Shaymin = pokemon('492','Shaymin','https://professorlotus.com/Sprites/Shaymin.gif', [],[], 1, 20, 's',75,150,75,150)
 
