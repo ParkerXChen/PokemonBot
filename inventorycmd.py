@@ -21,9 +21,9 @@ def inventorycmd(update, context):
 
 
     update.message.reply_text(
-        'XP: You have %s XP.\nYou have %s Pokedollars.\n\nBuddy: %s.\n\n Balls:\n\n x%s Pokeballs\n x%sGreatballs\n x%s Ultraballs\n x%s Masterballs.'%(
+        'XP: You have %s XP.\nYou have %s pokecoins.\n\nBuddy: %s.\n\n Balls:\n\n x%s Pokeballs\n x%sGreatballs\n x%s Ultraballs\n x%s Masterballs.'%(
         inventory.userinventory[uid]['XP'],
-        inventory.userinventory[uid]['pokedollars'],
+        inventory.userinventory[uid]['pokecoins'],
         buddy,
         inventory.userinventory[uid]['balls']['pokeballs'],
         inventory.userinventory[uid]['balls']['greatballs'],

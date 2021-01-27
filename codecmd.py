@@ -12,8 +12,8 @@ def code(update, context):
                 amount = codelist.codes[context.args[0]]['amount']
                 rtype = codelist.codes[context.args[0]]['rtype']
                 inventory.add_coderedeemed(uid,context.args[0])
-                if rtype == 'pokedollars':
-                    inventory.add_pokedollars(uid,amount)
+                if rtype == 'pokecoins':
+                    inventory.add_pokecoins(uid,amount)
                     update.message.reply_text('Code redeemed! You got %s %s!'%(amount,rtype))
             else: 
                 update.message.reply_text('Sorry, that code either does\'t exist or is expired.')

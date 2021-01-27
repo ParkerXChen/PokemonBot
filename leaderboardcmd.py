@@ -3,12 +3,12 @@ from telegram import InlineKeyboardMarkup,InlineKeyboardButton
 import random
 import inventory
 
-pokedollarsbutton = InlineKeyboardButton('Most Pokedollars Leaderboard',callback_data='leaderchoice:pokedollars')
+pokecoinsbutton = InlineKeyboardButton('Most pokecoins Leaderboard',callback_data='leaderchoice:pokecoins')
 xpbutton = InlineKeyboardButton('Most XP Leaderboard',callback_data='leaderchoice:xp')
 
-backbutton = InlineKeyboardButton('Back',callback_data='pokedollars')
+backbutton = InlineKeyboardButton('Back',callback_data='pokecoins')
 
-leaderchoicekb = InlineKeyboardMarkup([[pokedollarsbutton],[xpbutton]])
+leaderchoicekb = InlineKeyboardMarkup([[pokecoinsbutton],[xpbutton]])
 backkb = InlineKeyboardMarkup([backbutton])
 
 def leaderboard(update, context):
@@ -25,16 +25,16 @@ def leaderchoicecallback(update,context):
                 mostXPperson = inventory.userinventory[i]['name']
                 mostXPusername = inventory.userinventory[i]['username']
         query.edit_message_text(f'Most XP: \n\n{mostXPperson} (@{mostXPusername}): {mostXP}')
-    elif query.data == 'leaderchoice:pokedollars':
+    elif query.data == 'leaderchoice:pokecoins':
         uid = str(query.from_user.id)
         inventory.check_uid(uid,query.from_user.first_name,query.from_user.username)    
-        mostpokedollars = -1
+        mostpokecoins = -1
         for i in inventory.userinventory.keys():
-            if inventory.userinventory[i]['pokedollars'] > mostpokedollars:
-                mostpokedollars = inventory.userinventory[i]['pokedollars']
-                mostpokedollarsperson = inventory.userinventory[i]['name']
-                mostpokedollarsusername = inventory.userinventory[i]['username']
-        query.edit_message_text(f'Most Pokedollars: \n\n{mostpokedollarsperson} (@{mostpokedollarsusername}): {mostpokedollars}')
+            if inventory.userinventory[i]['pokecoins'] > mostpokecoins:
+                mostpokecoins = inventory.userinventory[i]['pokecoins']
+                mostpokecoinsperson = inventory.userinventory[i]['name']
+                mostpokecoinsusername = inventory.userinventory[i]['username']
+        query.edit_message_text(f'Most pokecoins: \n\n{mostpokecoinsperson} (@{mostpokecoinsusername}): {mostpokecoins}')
 
 def add_leaderboardhandler(dp:Dispatcher):
     dp.add_handler(CommandHandler('leaderboard', leaderboard))

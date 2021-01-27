@@ -24,7 +24,7 @@ def check_uid(uid,name,username):
             },
             "buddy": "",
             "pokemons": [],
-            "pokedollars": 0,
+            "pokecoins": 0,
             "codesredeemed": [],
             "started": False,
             "Spawnedpokemon": False,
@@ -58,9 +58,9 @@ def add_balls(uid,balltype,number):
     userinventory[uid]['balls'][balltype] += number
     save()
 
-def add_pokedollars(uid,number):
+def add_pokecoins(uid,number):
     uid = str(uid)
-    userinventory[uid]['pokedollars'] += number
+    userinventory[uid]['pokecoins'] += number
     save()
 
 def add_pokemon(uid,pokemon):
@@ -96,7 +96,7 @@ def reset(uid):
     userinventory[uid]['balls']['masterballs'] = 0
     userinventory[uid]['pokemons'] = []
     userinventory[uid]['buddy'] = ''
-    userinventory[uid]['pokedollars'] = 0
+    userinventory[uid]['pokecoins'] = 0
     userinventory[uid]['otheritems'] = []
     userinventory[uid]['codesredeemed'] = [] 
     userinventory[uid]['level'] = 0

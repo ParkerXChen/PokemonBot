@@ -19,7 +19,7 @@ def choosenewpokemon():
     global pokemonchosenstr
     global pokemonchosenrarity
     global raritypercent
-    global pokedollarsreward
+    global pokecoinsreward
     global XPreward 
     
     raritynum = random.randint(1,100)
@@ -28,31 +28,31 @@ def choosenewpokemon():
         pokemonchosenrarity = 'Common'
         pokemonchosen = random.choice(pokemons.commonpokemons)
         raritypercent = 54.76
-        pokedollarsreward = random.randint(100,200)
+        pokecoinsreward = random.randint(100,200)
         XPreward = random.randint(150,250)
     elif raritynum <= 80: 
         pokemonchosenrarity = 'Uncommon'
         pokemonchosen = random.choice(pokemons.uncommonpokemons)
         raritypercent = 14.47
-        pokedollarsreward = random.randint(250,500)
+        pokecoinsreward = random.randint(250,500)
         XPreward = random.randint(250,500)
     elif raritynum <= 90: 
         pokemonchosenrarity = 'Rare'
         pokemonchosen = random.choice(pokemons.rarepokemons)
         raritypercent = 9.59
-        pokedollarsreward = random.randint(500,1000)
+        pokecoinsreward = random.randint(500,1000)
         XPreward = random.randint(500,1000)
     elif raritynum == 95: 
         pokemonchosenrarity = 'Super Rare'
         pokemonchosen = random.choice(pokemons.superrarepokemons)
         raritypercent = 4.94
-        pokedollarsreward = random.randint(1000,3000)
+        pokecoinsreward = random.randint(1000,3000)
         XPreward = random.randint(1000,3000)
     elif raritynum == 100: 
         pokemonchosenrarity = 'Legendary'
         pokemonchosen = random.choice(pokemons.legendarypokemons)
         raritypercent = 0.733
-        pokedollarsreward = random.randint(5000,10000)
+        pokecoinsreward = random.randint(5000,10000)
         XPreward = random.randint(3000,5000)
     
     pokemonchosenstr = pokemonchosen.name   
@@ -119,9 +119,9 @@ def searchcallback(update, context):
             number = random.randint(1,3)   
             number = random.randint(1,100)    
             inventory.add_XP(uid,XPreward)
-            inventory.add_pokedollars(uid,pokedollarsreward)
+            inventory.add_pokecoins(uid,pokecoinsreward)
             
-            query.edit_message_caption('Congratulations, %s!\nYou captured the %s with a %s!\nRarity: %s\n\nYour catchrate: %s%%.\n\nBalls left:\n\nx%s Pokeballs\nx%s Greatballs \nx%s Ultraballs\nx%s Masterballs\n\nYou earned %s XP and %s Pokedollars!'%(
+            query.edit_message_caption('Congratulations, %s!\nYou captured the %s with a %s!\nRarity: %s\n\nYour catchrate: %s%%.\n\nBalls left:\n\nx%s Pokeballs\nx%s Greatballs \nx%s Ultraballs\nx%s Masterballs\n\nYou earned %s XP and %s pokecoins!'%(
             
             query.from_user.first_name,
             pokemonchosenstr,
@@ -133,7 +133,7 @@ def searchcallback(update, context):
             inventory.userinventory[uid]['balls']['ultraballs'],
             inventory.userinventory[uid]['balls']['masterballs'],
             XPreward,
-            pokedollarsreward
+            pokecoinsreward
             ))
 
             choosenewpokemon()
