@@ -27,31 +27,26 @@ def choosenewpokemon():
     if raritynum <= 65:
         pokemonchosenrarity = 'Common'
         pokemonchosen = random.choice(pokemons.commonpokemons)
-        raritypercent = 54.76
         pokecoinsreward = random.randint(100,200)
         XPreward = random.randint(150,250)
     elif raritynum <= 80: 
         pokemonchosenrarity = 'Uncommon'
         pokemonchosen = random.choice(pokemons.uncommonpokemons)
-        raritypercent = 14.47
         pokecoinsreward = random.randint(250,500)
         XPreward = random.randint(250,500)
     elif raritynum <= 90: 
         pokemonchosenrarity = 'Rare'
         pokemonchosen = random.choice(pokemons.rarepokemons)
-        raritypercent = 9.59
         pokecoinsreward = random.randint(500,1000)
         XPreward = random.randint(500,1000)
     elif raritynum == 95: 
         pokemonchosenrarity = 'Super Rare'
         pokemonchosen = random.choice(pokemons.superrarepokemons)
-        raritypercent = 4.94
         pokecoinsreward = random.randint(1000,3000)
         XPreward = random.randint(1000,3000)
     elif raritynum == 100: 
         pokemonchosenrarity = 'Legendary'
         pokemonchosen = random.choice(pokemons.legendarypokemons)
-        raritypercent = 0.733
         pokecoinsreward = random.randint(5000,10000)
         XPreward = random.randint(3000,5000)
     
@@ -80,7 +75,7 @@ def search(update, context):
 
         ballchoicekb = InlineKeyboardMarkup([balls])
         inventory.set_yesspawnedpokemon(uid)
-        update.message.reply_animation(pokemonchosen.spritelink,caption='A wild %s appeared! \n\nRarity: %s (%s%%). \nBase catchrate: %s\n\nWhat ball do you want to use on it?'%(pokemonchosenstr,pokemonchosenrarity,raritypercent,pokemonchosen.catchRate),reply_markup=ballchoicekb)
+        update.message.reply_animation(pokemonchosen.spritelink,caption='A wild %s appeared! \n\nRarity: %s. \nBase catchrate: %s\n\nWhat ball do you want to use on it?'%(pokemonchosenstr,pokemonchosenrarity,pokemonchosen.catchRate),reply_markup=ballchoicekb)
     else:
         update.message.reply_text('Sorry, but you already spawned a pokemon. Please catch that one before spawning another one.\n\nIf you want, you can use the /despawn command to depawn all pokemon instead.')
 

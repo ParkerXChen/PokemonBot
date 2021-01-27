@@ -12,19 +12,11 @@ def inventorycmd(update, context):
             pokemonslist += '%s,'%(i)
     else:
         pokemonslist = 'You have no pokemons'
-    
-    buddy = ''
-    if inventory.userinventory[uid]['buddy'] == '':
-        buddy = 'You do not have a buddy equipped'
-    else:
-        buddy = inventory.userinventory[uid]['buddy']
-
 
     update.message.reply_text(
-        'XP: You have %s XP.\nYou have %s pokecoins.\n\nBuddy: %s.\n\n Balls:\n\n x%s Pokeballs\n x%sGreatballs\n x%s Ultraballs\n x%s Masterballs.'%(
+        'XP: You have %s XP.\nYou have %s pokecoins.\n\n\n\n Balls:\n\n x%s Pokeballs\n x%sGreatballs\n x%s Ultraballs\n x%s Masterballs.'%(
         inventory.userinventory[uid]['XP'],
         inventory.userinventory[uid]['pokecoins'],
-        buddy,
         inventory.userinventory[uid]['balls']['pokeballs'],
         inventory.userinventory[uid]['balls']['greatballs'],
         inventory.userinventory[uid]['balls']['ultraballs'],
